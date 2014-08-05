@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="administrator" version="2.5" method="upgrade">
+	<name>IP Popular Admin</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+	<description>Admin control panel slider for popular properties. Publish it in 'cpanel' position.</description>
+	<files>
+		<filename module="mod_ip_popular">mod_ip_popular.php</filename>
+        <filename>index.html</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_ip_popular.ini</language>
+        <language tag="en-GB">language/en-GB.mod_ip_popular.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+        </fields>
+    </config>
+</extension>

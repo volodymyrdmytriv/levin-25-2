@@ -1,0 +1,122 @@
+/**
+* @version   $Id: master-ie8.css 2917 2012-08-31 00:50:20Z rhuk $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Grid Layout */
+body .rt-container {width: 1080px;}
+.rt-container .rt-grid-1 {width: 90px;}
+.rt-container .rt-grid-2 {width: 180px;}
+.rt-container .rt-grid-3 {width: 270px;}
+.rt-container .rt-grid-4 {width: 360px;}
+.rt-container .rt-grid-5 {width: 450px;}
+.rt-container .rt-grid-6 {width: 540px;}
+.rt-container .rt-grid-7 {width: 630px;}
+.rt-container .rt-grid-8 {width: 720px;}
+.rt-container .rt-grid-9 {width: 810px;}
+.rt-container .rt-grid-10 {width: 900px;}
+.rt-container .rt-grid-11 {width: 990px;}
+.rt-container .rt-grid-12 {width: 1080px;}
+
+.rt-container .rt-push-1 {left: 90px;}
+.rt-container .rt-push-2 {left: 180px;}
+.rt-container .rt-push-3 {left: 270px;}
+.rt-container .rt-push-4 {left: 360px;}
+.rt-container .rt-push-5 {left: 450px;}
+.rt-container .rt-push-6 {left: 540px;}
+.rt-container .rt-push-7 {left: 630px;}
+.rt-container .rt-push-8 {left: 720px;}
+.rt-container .rt-push-9 {left: 810px;}
+.rt-container .rt-push-10 {left: 900px;}
+.rt-container .rt-push-11 {left: 990px;}
+
+.rt-container .rt-pull-1 {left: -90px;}
+.rt-container .rt-pull-2 {left: -180px;}
+.rt-container .rt-pull-3 {left: -270px;}
+.rt-container .rt-pull-4 {left: -360px;}
+.rt-container .rt-pull-5 {left: -450px;}
+.rt-container .rt-pull-6 {left: -540px;}
+.rt-container .rt-pull-7 {left: -630px;}
+.rt-container .rt-pull-8 {left: -720px;}
+.rt-container .rt-pull-9 {left: -810px;}
+.rt-container .rt-pull-10 {left: -900px;}
+.rt-container .rt-pull-11 {left: -990px;}
+
+.rt-container .rt-prefix-1 {padding-left: 90px;}
+.rt-container .rt-prefix-2 {padding-left: 180px;}
+.rt-container .rt-prefix-3 {padding-left: 270px;}
+.rt-container .rt-prefix-4 {padding-left: 360px;}
+.rt-container .rt-prefix-5 {padding-left: 450px;}
+.rt-container .rt-prefix-6 {padding-left: 540px;}
+.rt-container .rt-prefix-7 {padding-left: 630px;}
+.rt-container .rt-prefix-8 {padding-left: 720px;}
+.rt-container .rt-prefix-9 {padding-left: 810px;}
+.rt-container .rt-prefix-10 {padding-left: 900px;}
+.rt-container .rt-prefix-11 {padding-left: 990px;}
+
+/* Font size wackiness in IE8 */
+.promo p {
+	font-size: 1.3em !important;
+	line-height: 1.5em !important;
+}
+
+/* K2 Layout */
+span.itemImage img {
+	width: auto !important;
+}
+
+span.catItemImage {
+	width: auto !important;
+}
+
+span.catItemImage img {
+	width: auto !important;
+}
+
+div.userItemImageBlock {
+	width: auto !important;
+}
+
+span.userItemImage img {
+	width: auto !important;
+}
+
+div.tagItemImageBlock {
+	width: auto !important;
+}
+
+span.tagItemImage img {
+	width: auto !important;
+}
+
+div.genericItemImageBlock {
+	width: auto !important;
+}
+
+span.genericItemImage img {
+	width: auto !important;
+}
+
+.itemInformation ul li {
+	display: block !important;
+}
+
+.gkResponsive img.nspImage,
+img.nspImage.gkResponsive { width: auto%!important; height: auto; }
+.nspArt img.nspImage { width: auto !important; }
+
+.featured .nspArt {
+    margin-right: 19px;
+}
+
+.weeklynews .nspArt {
+    margin-right: 16px;
+}
+
+.sprocket-features-desc a.readon { display: none;}
+
+.sidebar .nspArt img.nspImage {
+	width: auto !important;
+}

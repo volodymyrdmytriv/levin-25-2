@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="iproperty" method="upgrade">
+	<name>Iproperty - Favorite Tools</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+	<description>Displays a tabbed toolkit at the bottom of the user favorites page.</description>
+	<files>
+		<filename plugin="favoritetools">favoritetools.php</filename>
+	</files>
+    <languages>
+	   <language tag="en-GB">en-GB.plg_iproperty_favoritetools.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_iproperty/models/fields">
+                <field name="" type="header" default="PLG_IP_FT_INQUIRE_ALL" label="" description="" />
+                <field name="fi_enabled" type="radio" default="1" label="PLG_IP_FT_ENABLE_LABEL" description="PLG_IP_FT_ENABLE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="use_realname" type="radio" default="1" label="PLG_IP_FT_REALNAME_LABEL" description="PLG_IP_FT_REALNAME_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="max_requests" type="text" default="5" label="PLG_IP_FT_MAX_INQUIRIES_LABEL" description="PLG_IP_FT_MAX_INQUIRIES_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

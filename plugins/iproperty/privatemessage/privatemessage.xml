@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="iproperty" method="upgrade">
+    <name>Iproperty - Private Messages</name>
+    <author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@thethinkery.net</authorEmail>
+    <authorUrl>www.thethinkery.net</authorUrl>
+    <version>2.0.2</version>
+    <description>IProperty Private Message Plugin</description>
+    <files>
+        <filename plugin="privatemessage">privatemessage.php</filename>
+    </files>
+    <languages>
+       <language tag="en-GB">en-GB.plg_iproperty_privatemessage.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+            <field name="req_message" type="radio" default="0" label="PLG_IP_PRIVATEMESSAGE_INFO" description="PLG_IP_PRIVATEMESSAGE_INFO_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field name="friend_message" type="radio" default="0" label="PLG_IP_PRIVATEMESSAGE_FRIEND" description="PLG_IP_PRIVATEMESSAGE_FRIEND_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field name="from" type="user" default="42" label="PLG_IP_PRIVATEMESSAGE_FROM" description="PLG_IP_PRIVATEMESSAGE_FROM_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

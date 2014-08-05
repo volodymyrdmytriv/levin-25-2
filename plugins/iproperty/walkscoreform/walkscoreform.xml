@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="iproperty" method="upgrade">
+	<name>Iproperty - Walk Score Plugin (Form Position)</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+	<description>Walk Score API plugin (Form Position). Note: Walk Score is only available in some areas and may not work for your location.</description>
+	<files>
+		<filename plugin="walkscoreform">walkscoreform.php</filename>
+	</files>
+    <languages>
+	   <language tag="en-GB">en-GB.plg_iproperty_walkscoreform.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="tabtitle" type="text" default="Walk Score (R)" label="PLG_IP_WS_TABTITLE_LABEL" description="PLG_IP_WS_TABTITLE_DESC" />
+                <field name="before" type="radio" default="0" label="PLG_IP_WS_BEFORE_LABEL" description="PLG_IP_WS_BEFORE_DESC">
+				  <option value="0">JNO</option>
+				  <option value="1">JYES</option>
+				</field>
+                <field name="walkscore-id" type="text" default="" label="WS-ID" description="PLG_IP_WS_ID_DESC" />
+                <field name="width" type="text" default="750" label="PLG_IP_WS_WIDTH_LABEL" description="PLG_IP_WS_WIDTH_DESC" />
+                <field name="height" type="text" default="280" label="PLG_IP_WS_HEIGHT_LABEL" description="PLG_IP_WS_HEIGHT_DESC" />
+                <field name="unit" type="list" default="mi" label="PLG_IP_WS_UNIT_LABEL" description="PLG_IP_WS_UNIT_DESC" >
+                    <option value="mi">PLG_IP_WS_MILE</option>
+                    <option value="km">PLG_IP_WS_KM</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

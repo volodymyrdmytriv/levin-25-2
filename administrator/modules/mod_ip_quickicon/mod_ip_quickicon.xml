@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="administrator" version="2.5" method="upgrade">
+	<name>IP Quick Icons</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+	<description>Intellectual Property Control Panel Icon. This module creates a quick link icon to Intellectual Property straight from the Joomla! admin control panel. Publish it in the 'icon' position.</description>
+	<files>
+		<filename module="mod_ip_quickicon">mod_ip_quickicon.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+        <folder>images</folder>
+		<folder>tmpl</folder>
+	</files>
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_ip_quickicon.ini</language>
+        <language tag="es-ES">language/es-ES.mod_ip_quickicon.ini</language>
+    </languages>    
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="automatic_title"
+					type="radio"
+					default="0"
+					label="COM_MODULES_FIELD_AUTOMATIC_TITLE_LABEL"
+					description="COM_MODULES_FIELD_AUTOMATIC_TITLE_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - IProperty Mobile</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0</version>
+	<description>Displays IProperty in mobile compatible layout.</description>
+	<files>
+		<filename plugin="ipmobile">ipmobile.php</filename>
+        <filename>index.html</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+	</files>
+    
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_ipmobile.ini</language>
+    </languages>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="ipmobile_accent" type="text" default="" label="PLG_IP_MOBILE_ACCENT" description="PLG_IP_MOBILE_ACCENT_DESC" />
+                <field name="ipmobile_secondary_accent" type="text" default="" label="PLG_IP_MOBILE_SECONDARY_ACCENT" description="PLG_IP_MOBILE_SECONDARY_ACCENT_DESC" />
+                <field name="ipmobile_imgwidth" type="text" default="150" label="PLG_IP_MOBILE_IMG_WIDTH" description="PLG_IP_MOBILE_IMG_WIDTH_DESC" />
+                <field name="ipmobile_mapheight" type="text" default="150" label="PLG_IP_MOBILE_MAP_HEIGHT" description="PLG_IP_MOBILE_MAP_HEIGHT_DESC" />
+                <field name="ipmobile_toggle_text" type="text" default="Toggle Criteria" label="PLG_IP_MOBILE_TOGGLE_TEXT" description="PLG_IP_MOBILE_TOGGLE_TEXT_DESC" />
+                <field name="ipmobile_website_text" type="text" default="View Website" label="PLG_IP_MOBILE_WEBSITE_TEXT" description="PLG_IP_MOBILE_WEBSITE_TEXT_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

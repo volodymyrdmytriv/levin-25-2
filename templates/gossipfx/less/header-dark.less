@@ -1,0 +1,75 @@
+/**
+* @version   $Id$
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+// Top Section -----------------
+@topbackground:			#3b3b3b;
+@topbackground2:		#2e2e2e;
+@toptext:				#adadad;
+@toptitle:				#ffffff;
+@topshadow:				#000000;
+
+// Showcase --------------------
+@showcasebackground:	#212121;
+@showcasebackground2:	#4c4c4c;
+@showcasebackground3:	#7db9e8;
+@showcasetext:			#bbbbbb;
+@showcasetitle:			#ffffff;
+
+// Logo
+.logo-type-gantry #rt-logo {
+	background: url(../images/logo/dark/logo.png) 0 0 no-repeat;
+}
+
+// Top
+#rt-top-surround {
+
+}
+
+#rt-top-surround:after {
+
+}
+
+// Showcase
+#rt-showcase {
+
+}
+#rt-showcase {
+
+}
+
+.rt-showcase-pattern {
+}
+
+// Modules
+.title3 {
+	.title {
+
+	}
+}
+
+.box3 {
+	#gradient > .vertical(@topbackground, @topbackground2);
+	.box-shadow(0 2px 4px rgba(0,0,0,0.4));
+	border-bottom: 1px solid @topshadow;
+	color: @toptext;text-shadow: 0 2px 3px @topshadow;
+	.title {
+		color: @toptitle;
+		text-shadow: 1px 1px 1px @topshadow;
+		border-bottom: 1px solid @showcasebackground;
+		.box-shadow(0 1px 0 @showcasebackground2);
+	}
+	a {
+		&:hover {
+			color: @toptitle;
+		}
+	}
+}
+
+
+
+
+

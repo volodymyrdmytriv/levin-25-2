@@ -1,0 +1,102 @@
+h1{font-size: 18px; color: #222 !important; margin-left: 0px !important;}
+#prop_table{border: none !important;}
+
+/*ipmobile overrides*/
+.property_overview_title{padding: 5px; background: #f7f7f7; border: 1px solid #ccc; -webkit-border-radius: 6px;/*-moz-box-shadow: inset 0px 
+0px 10px #ddd;-webkit-box-shadow: inset 0px 0px 10px #ddd;box-shadow: inset 0px 0px 10px #ddd;*/}
+.ip_agent_details{padding: 5px; background: #fff; border: 1px solid #ccc; -webkit-border-radius: 6px; margin-bottom: 10px;}
+.ip_company_details{padding: 5px; background: #fff; border: 1px solid #f7f7f7;}
+.ip_agent_address{display: none !important;}
+dl.tabs dt, dl.tabs dt.open{background: #fff !important; color: #222; width: 90%; padding: 5px 10px; line-height: 120%; font-size: 120%; 
+font-weight: bold;border: 1px solid #ccc; -webkit-border-radius: 6px;-moz-box-shadow: inset 0px 0px 10px #ddd;-webkit-box-shadow: inset 0px 0px 10px 
+#ddd; box-shadow: inset 0px 0px 10px #ddd;}
+
+.ip_featuredmod_holder{background: #fff; padding: 10px;}
+.ip_featured_thumb, .ip_featured_thumb img{width: 160px !important; height: auto !important;}
+.moduletablemobilefooter{background: #c6c7cb;}
+
+.mobLogo{-moz-box-shadow: 0px 5px 5px #888;-webkit-box-shadow: 0px 5px 5px #888; box-shadow: 0px 5px 5px #888;}
+.moduletable{border: 0px; padding: 0px;}
+.current{padding: 0px !important; margin: 0px !important;}
+.current li{padding: 10px !important;}
+
+/*hide the forms for now*/
+.ip_agentsearch_form, .ip_companysearch_form, .ip_quicksearch_form{display: none !important;}
+
+/*IP Styles*/
+.ip_details_table_container div, .ip_details_table_container td{display: inline; clear: both;}
+.ip_imagetab{margin-bottom: 10px; border: solid 1px #ccc;}
+.ip_imagetab img{width: 100%;}
+#map_canvas{display: block; width: 100%;} 
+
+/*Hidden divs*/
+#ip_toolbar, .featured_table, #mapPane, .summary_sidecol,
+#ipeducation, .ip_education, #ipwalkscore, #ws-walkscore-tile, #ws-footer,
+.ip_sidecol_header,.ip_agent_details div b, .ip_company_details div b{display: none !important;}
+            
+            
+/* General table to div styles */
+.ptable{line-height: 125%; font-size: 100%;}
+.ptable .ip_favorites{line-height: 125% !important; font-size: 60% !important;}
+.iprow0, .iprow1{margin-top: 10px !important; background: #fff !important;}
+.property_thumb_holder{margin-top: 10px !important;}
+.property_thumb_holder, .ip_overview_thumb, .bubble_image img, .ip_gallery img{height: auto !important;}
+
+
+.inputbox{width: 95% !important;}
+.ip_agentsearch_form, .ip_quicksearch_form, .ip_companysearch_form, .ip_cform_wrapper{display: block !important; clear: both; margin-bottom: 160px !
+important;}
+.ippagination{display: block !important; padding: 5px; text-align: center; margin-top: 10px; background: #f7f7f7 !important; clear: both !important;}
+
+/* toolbar */            
+#ip_toolbar{text-align: left !important; font-size: 80%;}
+
+/* quick search filters */
+.ip_quicksearch_form input, .ip_quicksearch_form select{margin: 5px 0;}
+.ip_quicksearch_sortholder{width: 100%; float: left !important; text-align: left !important;}
+.ip_quicksearch_form li{display: block; width: 100%; font-size: 100%;}
+
+/* user favorites */
+.ip_loginform_container{width: 100% !important; padding: 0px !important; border: none !important;}
+
+/* advanced search */
+.adv_mobile_wrapper{position: relative;}
+.property_slider{width: 90% !important;}
+#advmap_canvas, #advmap_canvas_transparent, #loading_div{width: 100% !important;}
+#advmap_canvas, #loading_div{height: 200px !important;}
+#search_string, .adv_city{width: 100px !important; display: inline !important;}
+.advsearch_overview{margin-top: 10px;}
+.adv_map_preview{position: absolute; top: 5px; right: 10px;}
+
+/* property details */
+.ip_sidecol_address{padding: 5px; background: #f7f7f7; width: 95%; border: 1px solid #ccc; -webkit-border-radius: 5px;}
+.ip_imagetab, .ip_doctab, #map_canvas{width: 100% !important; height: auto !important;}
+.property_overview_title{font-size: 80%;}
+.property_overview_title{padding: 5px; background: #e5f0fa; border: 1px solid #888888; -webkit-border-radius: 6px;}
+.ip_quicksearch_optholder li, .ip_quicksearch_optholder strong, .quicksearch_sortholder strong, .ip_quicksearch_sortholder li{font-size: 80%; display: 
+block;}
+.ip_gallery td{display: block; float: left;}
+.property_header{font-size: 60% !important; clear: both; padding: 3px; border-top: solid 2px; margin: 10px 0px 5px 0px;}
+.ip_mapright{display: block !important; width: 100% !important; clear: both !important;}
+.ip_addthis_container{width: 100% !important;}
+.ip_checklist{background-image: none !important;}
+            
+/* tabs */
+dl.tabs {float: left; margin: 0px; z-index: 50;}
+dl.tabs dt, dl.tabs dt.open{background: #2E394C !important; width: 90%; padding: 5px 10px; line-height: 120%; font-size: 120%; font-weight: bold;}
+div.current {clear: both; border: none; padding: 10px;}
+div.current dd {padding: 0; margin: 0;}
+div.ip_spacer {display: block; clear: both; height: 10px !important;}
+dt.tabs.description{display: none !important;}
+.tabs.details_panel, .tabs.video_panel, .tabs.req_panel, .tabs.stf_panel, .tabs.ipeducation, .tabs.ipfbcomments, .tabs.ipfindmyschool, .tabs.ipgalleryform, .tabs.ipgoogleplaces, .tabs.ipjcomments, .tabs.ipjomcomment, .tabs.ipwalkscore{display: none;}
+
+/* agent display */
+.ip_agent_details a, .ip_company_details a, .ip_agent_address a, .ip_sidecol_address a{text-decoration: none;}
+.ip_agent_detailsheader{font-size: 75%; display: block; clear: both; margin-bottom: 10px;}
+.ip_agent_details, .ip_company_details{padding: 5px; background: #e5f0fa; width: 95%; border: 1px solid #888888; -webkit-border-radius: 6px;}
+.ip_agent_address{padding: 5px; background: #f7f7f7; width: 95%; border: 1px solid #888888; -webkit-border-radius: 6px; margin-top: 5px;}
+.ip_agent_photo{margin-top: 10px;}
+        
+
+input[type=radio]{display: block; float: left; width: 50px;}
+.ip_radio_container label{display: block; float: left !important; width: 150px; clear: left !important;}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.0" type="plugin" group="iproperty" method="upgrade">
+	<name>Iproperty - Agent QR vCard / meCard</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+	<description>Intellectual Property Agent QR vCard / meCard - Agent position</description>
+	<files>
+		<filename plugin="agentqr">agentqr.php</filename>
+	</files>	
+	<languages>
+	   <language tag="en-GB">en-GB.plg_iproperty_agentqr.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="format" type="list" default="0" label="PLG_IP_AGENTQR_FORMAT" description="PLG_IP_AGENTQR_FORMAT_DESC">
+                  <option value="0">vCard</option>
+                  <option value="1">meCard</option>
+                </field>
+                <field name="size" type="integer" default="250" label="PLG_IP_AGENTQR_SIZE" description="PLG_IP_AGENTQR_SIZE_DESC" first="100" last="600" step="25" />
+             </fieldset>
+         </fields>
+     </config>
+</extension>

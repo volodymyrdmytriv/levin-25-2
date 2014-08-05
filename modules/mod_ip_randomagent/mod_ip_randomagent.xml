@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+    <name>IP Random Agent</name>
+    <author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+    <description>Display a random agent in module position.</description>
+    <files>
+		<filename module="mod_ip_randomagent">mod_ip_randomagent.php</filename>
+		<filename>index.html</filename>
+        <filename>helper.php</filename>
+		<folder>tmpl/</folder>
+	</files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_ip_randomagent.ini</language>
+    </languages>
+
+    <config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_iproperty/models/fields">                
+                <field name="" type="header" default="MOD_IP_RA_DISPLAY" label="" description="" />
+                <field name="include_ipcss" type="radio" default="1" label="MOD_IP_RA_INCLUDE_IPCSS" description="MOD_IP_RA_INCLUDE_IPCSS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="thumb_width" type="text" default="200" label="MOD_IP_RA_THMB_WIDTH" description="MOD_IP_RA_THMB_WIDTH_DESC" />
+                <field name="thumb_height" type="text" default="120" label="MOD_IP_RA_THMB_HEIGHT" description="MOD_IP_RA_THMB_HEIGHT_DESC" />
+                <field name="border_color" type="text" default="#fff" label="MOD_IP_RA_THMB_BORDER" description="" />
+                <field name="" type="header" default="MOD_IP_RA_LAYOUT" label="" description="" />                
+                <field name="iplayout" type="list" default="1" label="MOD_IP_RA_LAYOUT" description="MOD_IP_RA_LAYOUT_DESC">
+                    <option value="1">MOD_IP_RA_HORIZONTAL</option>
+                    <option value="2">MOD_IP_RA_VERTICAL</option>
+                </field>
+                <field name="columns" type="list" default="3" label="MOD_IP_RA_COLUMNS" description="MOD_IP_RA_COLUMNS_DESC">
+                    <option value="1">J1</option>
+                    <option value="2">J2</option>
+                    <option value="3">J3</option>
+                    <option value="4">J4</option>
+                    <option value="5">J5</option>
+                </field>
+                <field name="preview_count" type="text" default="200" label="MOD_IP_RA_CHARACTERS" description="MOD_IP_RA_CHARACTERS_DESC" />
+                <field name="" type="header" default="MOD_IP_RA_OPTIONS" label="" description="" />
+                <field name="company_id" type="company" default="0" label="MOD_IP_RA_COMPANY" description="MOD_IP_RA_COMPANY_DESC" />
+                <field name="featured" type="list" default="0" label="MOD_IP_RA_FEATURED" description="MOD_IP_RA_FEATURED_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="random" type="list" default="1" label="MOD_IP_RA_RANDOM" description="MOD_IP_RA_RANDOM_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="count" type="text" default="5" label="MOD_IP_RA_COUNT" description="MOD_IP_RA_COUNT_DESC" />
+                <field name="show_bio" type="radio" default="1" label="MOD_IP_RA_SHOWBIO" description="MOD_IP_RA_SHOWBIO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="clean_bio" type="radio" default="0" label="MOD_IP_RA_CLEANBIO" description="MOD_IP_RA_CLEANBIO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="hide_mod" type="radio" default="1" label="MOD_IP_RA_HIDEMOD" description="MOD_IP_RA_HIDEMOD_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field name="cache_time" type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search" method="upgrade">
+	<name>Search - Intellectual Property</name>
+	<author>The Thinkery</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 The Thinkery LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@thethinkery.net</authorEmail>
+	<authorUrl>www.thethinkery.net</authorUrl>
+	<version>2.0.2</version>
+	<description>Allows searching of Intellectual Property Listings</description>
+	<files>
+		<filename plugin="ipsearch">ipsearch.php</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">language/en-GB.plg_search_ipsearch.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+                <field name="search_limit" type="text" size="5" default="50" label="PLG_IP_SEARCH_LIMIT" description="PLG_IP_SEARCH_LIMIT_DESC"/>
+                <field name="search_short" type="radio" default="1" label="PLG_IP_SEARCH_SHORT" description="PLG_IP_SEARCH_SHORT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="search_full" type="radio" default="1" label="PLG_IP_SEARCH_FULL" description="PLG_IP_SEARCH_FULL_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

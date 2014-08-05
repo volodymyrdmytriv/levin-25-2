@@ -1,0 +1,26 @@
+﻿.topToolbar,.contentLabel, .sliderThumb:after, .helpImg.fontImage{
+background-color: rgba(125,133,138,1);
+}
+
+.popover{
+background-color: rgba(187,194,199,1);
+}
+
+
+.toolbar, .contentLabel, .popover .button{
+color: rgb(255,255,255);
+text-shadow: rgb(38,38,38) 1px 1px 3px; 
+}
+.contentOuter *, #helpOver > .contentLabel{
+
+color: rgb(0,0,0);
+text-shadow: none;
+}
+
+#bgDiv{
+	background-color: rgba(125,133,138,1);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+}

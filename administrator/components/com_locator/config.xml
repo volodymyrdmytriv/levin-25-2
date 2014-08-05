@@ -1,0 +1,59 @@
+ <root>
+  <params>
+	<param type="text" name="gmap_base_tld" default="US" size="3" label="Google Maps Base TLD" description="The two-letter country code top-level domain used to bias the geocoder's results. See http://www.iana.org/domains/root/db/index.html" />
+	<param type="text" name="separator" default="," size="3" label="CSV separator" description="" />
+	<param type="text" name="export_segment" default="1000" label="Export Chunk Size" description="" />
+	<param type="list" name="debug_mode" default="0" label="Debug Mode?" description="Adds debugging output (DO NOT USE IN PRODUCTION!)" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+   </param>
+	<param type="list" name="google_analytics" default="0" label="Integrate with Google Analytics" description="Tracks clicks and views of locations &amp; searches in your Google Analytics account.  You must have Google Analytics tracking code installed on your site." >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+   </param>   
+     <param type="list" name="use_ssl" default="0" label="Use SSL for Maps?" description="" >
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+   <param type="list" name="skip_geocoded" default="0" label="Exclude Geocoded locations on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+   </param>   
+   <param type="list" name="use_address_1" default="1" label="Use Address field on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+   </param> 
+   <param type="list" name="use_address_2" default="0" label="Use Address 2 field on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>       
+     <param type="list" name="use_city" default="1" label="Use city field on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>  
+     <param type="list" name="use_state" default="1" label="Use state field on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>
+     <param type="list" name="use_postalcode" default="1" label="Use postalcode field on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>    
+     <param type="list" name="use_country" default="1" label="Use country field on bulk geocoder?" description="" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>                
+    <param type="list" name="set_big_selects" default="0" label="Set MySQL Big Selects" description="ADVANCED ONLY" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>          
+    
+ 	<param type="list" name="use_jquery" default="1" label="Use jQuery for Ajax?" description="This option will use the jQuery javascript library instead of the default MooTools.  Note: Menu-item DOM Hook settings are ignored if this is set to Yes.  (jQuery.ready() event is used)" >
+    	<option value="1">Yes</option>
+    	<option value="0">No</option>
+    </param>    
+  
+    <param type="textarea" name="admin_template" rows="5" cols="20" default="{address} {address2} {city}, {state} {postalcode}" size="25" label="Admin Item address format" description="The format of the address. Fields are lowercase and in curly brackets. HTML Tags are in square brackets, (E.g. [br][p][/p])  Items with a [br] tag directly after them (no spaces) that are blank will also omit the the [br] tag"/>			
+			    
+  </params>
+</root>

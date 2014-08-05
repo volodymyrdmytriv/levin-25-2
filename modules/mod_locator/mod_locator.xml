@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Locator Module</name>
+	<creationDate>3/11/2011</creationDate>
+	<author>Michael Fatica</author>
+	<copyright>Copyright 2010-2011 Fatica Consulting L.L.C. All Rights Reserved</copyright>
+	<authorEmail>mike@fatica.net</authorEmail>
+	<authorUrl>http://www.fatica.net</authorUrl>
+	<version>1.1034</version>
+	<license>GPL</license>
+	<description>Search Module for Locator Component</description>
+	<files>
+		<filename module="mod_locator">mod_locator.php</filename>
+	    <filename>helper.php</filename>
+	    <filename>index.html</filename>
+	    <folder>tmpl</folder>
+	</files>
+		<params addpath="/administrator/components/com_locator/elements">		
+			
+		<!--	<param name="centeronuser" type="list" default="1" label="Center Map on user Location?" description="Automatically zooms, pans and FILTERS the search results and map display to best fit the search results closest to the user.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+					
+			<param name="jslinkmarkers" type="list" default="0" label="Link Markers to Content?" description="Jomsocal only.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+		 -->
+
+				
+			<param name="showresultson" type="sql" default="" label="Show Results on"  key_field="id" value_field="name"   query="select id,`name` from #__menu where link like '%com_locator%' and published=1 order by `name`" description="What page should the results be displayed on?  This *must* be a menu type of Locator" />
+
+			<param name="tags" type="tag" label="Tags" source="tag" multiple="multiple" description="Tags to include on the legend.  Leave all unselected for All.  If your target menu item is filtered to display tags you show here, they will never return results."></param>	
+			<param name="showlegend" type="list" default="0" label="Show a legend?" description="Show map icons and labels">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="linklegend" type="list" default="0" label="Hyperlink legend Entries?" description="Link the entries in the legend to a search by tag for that legend entry.  Search results appear on the menu item selected below.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param name="showzipform" type="list" default="1" label="Show postal code search form?" description="Show postal code search form">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="showkeywordform" type="list" default="0" label="Show keyword search form?" description="Show keyword code search form">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>						
+			<param name="showtagdropdown" type="list" default="0" label="Show drop-down list of tags?" description="Show drop-down list of tags">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param name="showcitydropdown" type="list" default="0" label="Show drop-down list of cities?" description="Show drop-down list of cities">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>				
+			<param name="showstatedropdown" type="list" default="0" label="Show drop-down list of states/provinces?" description="Show drop-down list of states/provinces">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="showcountrydropdown" type="list" default="0" label="Show drop-down list of countries?" description="Show drop-down list of countries?  If enabled, this will be a required field">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>					
+			<param name="requirepostalcode" type="list" default="1" label="Require a postal code?" description="Prevents users from pressing Submit and displaying all records">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			<param type="list" name="distance_unit" default="LOCATOR_M" size="3" label="Measure in KM or Miles" description="When searching for locations near a postal code, use Kilometres or Miles" >
+		    	<option value="LOCATOR_M">Miles</option>
+		    	<option value="LOCATOR_K">Kilometers</option>
+		    </param>		    
+			<param name="distances" type="text" default="5,10,25,50,100" label="List of distances" description="A comma-separated list of values to show in the drop-down box that indicates the search radius."/>				
+			
+			<param name="showmap" type="list" default="0" label="Show a map?" description="Show a small map">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>	
+			<param name="centeronresults" type="list" default="1" label="Center Map on results?" description="Automatically zooms and pans the search results map display to best fit the search results.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+
+		    <param type="text" name="gmap_default_lat" default="41.397" size="25" label="Map Center Latitude" description="The center latitude of the map.  This can be overridden by the Menu item parameters." />
+		    <param type="text" name="gmap_default_lng" default="-96.644" size="25" label="Map Center Longitude" description="The center Longitude of the map.  This can be overridden by the Menu item parameters." />
+		    <param type="text" name="gmap_default_zoom" default="4" size="25" label="Map Zoom" description="The default zoom level of the map (1-10).  This can be overridden by the Menu item parameters." />
+		    
+		    <param type="text" name="gmap_base_tld" default="US" size="3" label="Google Maps Base TLD" description="The two-letter country code top-level domain used to bias the geocoder's results. See http://www.iana.org/domains/root/db/index.html" />
+		    
+		    <param name="defaultmapview" type="list" default="ROADMAP" label="Default Map View" description="Sets the default type of Google Map display">
+				<option value="ROADMAP">ROADMAP</option>
+				<option value="SATELLITE">SATELLITE</option>
+				<option value="HYBRID">HYBRID</option>
+				<option value="TERRAIN">TERRAIN</option>
+			</param>		
+			
+			<param type="text" name="gmap_width" default="200" size="25" label="Map Width" description="Map width in pixels (E.g: 500). This can be overridden by the Menu item parameters." />
+    		<param type="text" name="gmap_height" default="200" size="25" label="Map Height" description="Map height in pixels (E.g: 500). This can be overridden by the Menu item parameters." />
+						
+			<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

@@ -1,0 +1,79 @@
+
+#rt-menu .menu-block {
+	
+	z-index: 4;
+	
+}
+
+#rt-menu .quicksearch {
+	margin: 0px;
+	padding: 0px;
+	
+	position: absolute;
+	left: 70px;
+	top: 30px;
+	overflow: hidden;
+	
+	height: 0px;
+	/*height: 163px; - max*/
+	width: 460px;
+	z-index: 3;
+}
+
+.quicksearch .module-surround {
+	
+	/*width: 420px;*/
+	
+	margin: 0px;
+	padding: 0px;
+	
+	background-color: #f6f6f6;
+	-moz-box-shadow: 0px 0px 5px #666666;
+	-webkit-box-shadow: 0px 0px 5px #666666;
+	box-shadow: 0px 0px 5px #666666;
+	
+	position: absolute;
+	left: 2px;
+	bottom: 2px;
+}
+
+form.qs_propertysearch_mainform {
+	margin: 0px;
+	padding: 0px;
+}
+
+form.qs_propertysearch_mainform select {
+	margin: 0px;
+}
+
+form.qs_propertysearch_mainform select {
+	
+	width: 200px;
+}
+
+.search_reset {
+	color: #5a81b7;
+	border: solid 0px #ffffff;
+	background-color: transparent;
+	outline: 0;
+}
+
+#header-property-search-bottom {
+	height: 37px;
+	background-color: #ededed;
+	padding: 0px 12px 0px 12px;
+	background-image: url(../images/header-search-bottom-bg.png);
+	background-repeat: repeat-x;
+}
+
+.header-search-pdf-section {
+	float: left;
+	line-height: 37px;
+	height: 37px;
+	background-image: url(../images/pdf-icon.png);
+	background-repeat: no-repeat;
+	background-position: 0px 8px;
+	padding-left: 26px;
+	color: #444444;
+}
+

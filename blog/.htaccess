@@ -1,0 +1,22 @@
+#Use PHP 5.3
+AddType application/x-httpd-php53 .php
+<IfModule mod_suphp.c>
+suPHP_ConfigPath /opt/php53/lib/php.ini
+</IfModule>
+
+
+
+# BEGIN WPSuperCache
+# END WPSuperCache
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /levin-25/blog/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /levin-25/blog/index.php [L]
+</IfModule>
+
+# END WordPress

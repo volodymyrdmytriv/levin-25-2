@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+    <name>Lof Responsive Slideshow Module</name>
+    <creationDate>December 2011</creationDate>
+    <author>LandOfCoder</author>
+    <copyright>GNU / GPL2 http://www.gnu.org/licenses/gpl-2.0.html</copyright>
+    <authorEmail>landofcoder@gmail.com</authorEmail>
+    <authorUrl>http://www.landofcoder.com</authorUrl>
+    <version>2.0</version>
+	<description>
+		<![CDATA[<div style="font-size:11px">
+			<a target="_blank" href="http://landofcoder.com">. 
+			<b>Lof Responsive Slideshow Module</b></a> 
+			<ul>
+				<li><a href="http://landofcoder.com/submit-request">Email Support</a></li>
+				<li><a href="http://landofcoder.com/help-desk.html">Help Desk</a></li>
+				<li><a href="http://landofcoder.com/forum.html">Forum Support</a></li>
+			</ul>
+			<p><br><div style="clear:both"><b>Copyright:</b> <a target="_blank" href="http://landofcoder.com">LandOfCoder.Com</a></div></p>
+			</div>
+		]]>
+	</description>
+    <files>
+		<filename module="mod_lofrepslideshow">mod_lofrepslideshow.php</filename>
+		<filename module="mod_lofrepslideshow">helper.php</filename>
+		<filename module="mod_lofrepslideshow">index.html</filename>
+		<folder module="mod_lofrepslideshow">libs</folder>
+		<folder module="mod_lofrepslideshow">assets</folder>
+		<folder module="mod_lofrepslideshow">tmpl</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_lofrepslideshow.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params" 
+			addfieldpath="modules/mod_lofrepslideshow/libs/elements">
+			  
+			  <fieldset name="navigator_form" title="NAVIGATOR_FORM_F">
+					<field  type="loftoolbar" name="loftoolbar">
+						<option>Global</option>
+						<option>Data Source</option>
+						<option>Item Layout</option>
+						<option>Effect</option>
+						<option>Advanded</option>
+				
+					</field>
+			</fieldset>
+			
+			<fieldset 
+				name="Basic" label="GLOBALSETTING">
+				<field type="lofspacer" />
+				<field 
+					name="moduleclass_sfx" 
+					type="text" 
+					default="" 
+					label="MODULE_CLASS_SUFFIX" 
+					description="MODULE_CLASS_SUFFIX_DESC" 
+					/>	
+					
+				<field 
+					name="theme" 
+					type="folderlist" 
+					hide_none="true"
+					hide_default="true"
+					label="SELECT_THEME" 
+					default="default" 
+					directory="modules/mod_lofrepslideshow/assets/theme/" 
+					filter="" 
+					exclude="_navigator|_contentslider|_item" 
+					stripext="" /> 	
+		 
+			 
+				
+				
+				<field name="enable_preload" type="radio" default="1" label="ENABLE_PRELOAD_EFFECT" description="ENABLE_PRELOAD_EFFECT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				  </field>
+	 
+				<field 
+					name="autohide_indicator"
+					type="radio" 
+					default="1" 
+					label="AUTOHIDE_INDICATOR"
+					description="AUTOHIDE_INDICATOR_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				<field 
+					name="autohide_navigation"
+					type="radio" 
+					default="1" 
+					label="AUTOHIDE_NAVIGATOR"
+					description="AUTOHIDE_NAVIGATOR_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field name="enable_jquery" type="radio" default="1" label="ENABE_JQUERY" description="ENABE_JQUERY_DESC">
+				  <option value="0">JNO</option>
+				  <option value="1">JYES</option>
+				</field>
+			</fieldset>
+<fieldset name="DATA_SOURCE">
+		<field name="data_source" type="folderlist" hide_none="true" hide_default="true" default="content" label="SELECT_GROUP" directory="modules/mod_lofrepslideshow/libs/source/" filter="" exclude="" stripext="" />
+			<field name="limit_items" type="text" default="6" label="LIMIT_ITEMS" description="LIMIT_ITEMS_DESC" />
+				
+</fieldset>	
+
+	
+<fieldset name="K2SETTING">	
+		<field name="k2_source" type="radio" default="k2_category" label="SOURCE_FROM"  description="SOURCE_FROM_DESC" >
+			<option value="k2_category">CATEGORY</option>
+			<option value="k2_items_ids">K2 Item Ids</option>
+		</field>
+		<field name="k2_items_ids" type="text" default="" label="K2 Item Ids"  description="ARTICLES_IDS_DESC" size="70" />
+			
+       <field name="k2_category" type="categoriesmultiple" default="" label="JCATEGORY"  description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" />
+	    <field name="featured_items_show" type="list" default="1" label="MOD_LATEST_NEWS_FIELD_FEATURED_LABEL" description="MOD_LATEST_NEWS_FIELD_FEATURED_DESC">
+          <option value="0">HIDE</option>
+          <option value="1">SHOW</option>
+          <option value="2">ONLY FEATURED ITEMS</option>
+        </field>
+	   <field name="k2_ordering" type="list" default="created_asc" label="ARTCILES_SORTED_BY" description="ARTCILES_SORTED_BY_DESC">
+			<option value="ordering_asc">ORDERING - ASCENDING</option>
+			<option value="ordering_desc">ORDERING - DESCENDING</option>
+			<option value="hits_asc">HIT - ASCENDING</option>
+			<option value="hits_desc">HIT - DESCENDING</option>
+			<option value="created_desc">DATE - ASCENDING</option>
+			<option value="created_asc">DATE - DESCENDING</option>
+		</field>
+</fieldset>	
+	
+<fieldset name="CONTENTSETTING">
+				<field name="source" type="list" default="category" label="SOURCE_FROM"  description="SOURCE_FROM_DESC" >
+					<option value="category">CATEGORY</option>
+					<option value="article_ids">ARTICLES_IDS</option>
+				</field>
+				<field name="article_ids" type="text" default="" label="ARTICLES_IDS"  description="ARTICLES_IDS_DESC" size="40" />
+				<field name="category" type="category" 
+					extension="com_content"
+					multiple="true"
+					size="10"
+					label="JCATEGORY"
+					description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" show_root="true" />	
+				<field
+					name="user_id"
+					type="list"
+					default="0"
+					label="MOD_LATEST_NEWS_FIELD_USER_LABEL"
+					description="MOD_LATEST_NEWS_FIELD_USER_DESC">
+						<option	value="0">MOD_LATEST_NEWS_VALUE_ANYONE</option>
+						<option	value="by_me">MOD_LATEST_NEWS_VALUE_ADDED_BY_ME</option>
+						<option	value="not_me">MOD_LATEST_NEWS_VALUE_NOTADDED_BY_ME</option>
+				</field>
+				<field
+					name="show_featured"
+					type="list"
+					default=""
+					label="MOD_LATEST_NEWS_FIELD_FEATURED_LABEL"
+					description="MOD_LATEST_NEWS_FIELD_FEATURED_DESC">
+						<option value="">JSHOW</option>
+						<option	value="0">JHIDE</option>
+						<option	value="1">MOD_LATEST_NEWS_VALUE_ONLY_SHOW_FEATURED</option>
+				</field>
+				<field name="ordering" type="list" default="created-asc" label="ARTCILES_SORTED_BY" description="ARTCILES_SORTED_BY_DESC">
+					<option value="id-asc">ID_ASCENDING</option>
+					<option value="id-desc">ID_DESCENDING</option>
+					<option value="ordering-asc">ORDERING_ASCENDING</option>
+					<option value="ordering-desc">ORDERING_DESCENDING</option>
+					<option value="hits-asc">HIT_ASCENDING</option>
+					<option value="hits-desc">HIT_DESCENDING</option>
+					<option value="created-desc">DATE_ASCENDING</option>
+					<option value="created-asc">DATE_DESCENDING</option>
+					<option value="publish_up-asc">PUBLISHED_DATE_ASCENDING</option>
+					<option value="publish_up-desc">PUBLISHED_DATE_DESCENDING</option>
+					<option value="rand-">RANDOM</option>
+				</field>					
+			
+			</fieldset>		
+	
+			<fieldset name="itemlayoutsetting" label="Item Layout Setting">
+
+				<field name="auto_strip_tags" type="list" default="1" label="STRIP_HTML_LABEL" description="STRIP_HTML_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>  
+			<field name="limit_description_by" type="list" default="char" label="LIMIT_DESCRIPTION_BY" description="LIMIT_DESCRIPTION_BY_DESC">
+					<option value="word">WORD</option>
+					<option value="char">CHARACTER</option>
+				</field>  
+				<field name="description_max_chars" type="text" default="100" label="DESCIPTION_MAX_CHARS" description="DESCIPTION_MAX_CHARS_DESC" />
+					
+				<field
+					name="show_readmore"
+					type="radio" 
+					default="1"
+					label="SHOW_READ_MORE" 
+					description="SHOW_READ_MORE_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				<field name="bgdesc" type="lofcolorpicker" default="000000" label="DESCIPTION_BACKGROUND" description="DESCIPTION_BACKGROUND_DESC" />	
+				<field name="colordesc" type="lofcolorpicker" default="ffffff" label="DESCIPTION_COLOR" description="DESCIPTION_COLOR_DESC" />
+				<field name="colorlink" type="lofcolorpicker" default="ffffff" label="LINK_DESC_COLOR" description="LINK_DESC_COLOR_DESC" /> 
+				 <field
+					name="show_caption"
+					type="radio" 
+					default="1"
+					label="SHOW_CAPTION"
+					description="SHOW_CAPTION_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				<field
+					name="show_description"
+					type="radio" 
+					default="1"
+					label="SHOW_DESCRIPTION"
+					description="SHOW_DESCRIPTION_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field> 
+				<field
+					name="show_title"
+					type="radio" 
+					default="1"
+					label="SHOW_TITLE"
+					description="SHOW_TITLE_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+			
+				<field 
+					name="auto_renderthumb" 
+					type="radio" 
+					default="1" 
+					label="RENDER_THUMBNAIL" 
+					description="RENDER_THUMBNAIL_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>	
+				
+				<field 
+					name="thumbnail_width" 
+					type="text" 
+					default="960" 
+					label="THUMBNAIL_WIDTH" 
+					description="THUMBNAIL_WIDTH_DESC" />
+					
+				<field
+					name="thumbnail_height"
+					type="text" 
+					default="320"
+					label="THUMBNAIL_HEIGHT"
+					description="THUMBNAIL_HEIGHT_DESC" />
+			</fieldset>
+			 
+		
+			<fieldset name="effectsetting" label="Page Effect Setting">
+				
+ 
+
+				<field
+					name="interval"
+					type="text" 
+					default="5" 
+					label="INTERVAL" 
+					description="INTERVAL_DESC" />
+					
+				<field 
+					name="duration"
+					type="text"
+					default="500" 
+					label="ANIMATION_DURATION" 
+					description="ANIMATION_DURATION_DESC" />
+
+				
+				<field
+					name="effect_random"
+					type="radio" 
+					default="1" 
+					label="RANDOM_ALL_EFFECT" 
+					description="RANDOM_ALL_EFFECT_DESEC" >
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+					
+				<field 
+					name="effect"
+					type="list"
+					multiple="multiple"
+					default="Fx.Transitions.Quad.easeInOut" 
+					label="PAGE_ANIMATION_TRANSITION" 
+					description="PAGE_ANIMATION_TRANSITION_DESC" size="10">
+						<option value='chess'></option>
+						<option value='flash'></option>
+						<option value='spiral_reversed'></option>
+						<option value='sq_appear'></option>
+						<option value='sq_flyoff'></option>
+						<option value='sq_drop'></option>
+						<option value='sq_squeeze'></option>
+						<option value='sq_random'></option>
+						<option value='sq_diagonal_rev'></option>
+						<option value='sq_diagonal'></option>
+						<option value='sq_fade_random'></option>
+						<option value='sq_fade_diagonal_rev'></option>
+						<option value='sq_fade_diagonal'></option>
+						<option value='explode'></option>
+						<option value='implode'></option>
+						<option value='fountain'></option>
+						<option value='blind_bottom'></option>
+						<option value='blind_top'></option>
+						<option value='blind_right'></option>
+						<option value='blind_left'></option>
+						<option value='shot_right'></option>
+						<option value='shot_left'></option>
+						<option value='alternate_vertical'></option>
+						<option value='alternate_horizontal'></option>
+						<option value='zipper_right'></option>
+						<option value='zipper_left'></option>
+						<option value='bar_slide_random'></option>
+						<option value='bar_slide_bottomright'></option>
+						<option value='bar_slide_topright'></option>
+						<option value='bar_slide_topleft'></option>
+						<option value='bar_fade_bottom'></option>
+						<option value='bar_fade_top'></option>
+						<option value='bar_fade_right'></option>
+						<option value='bar_fade_left'></option>
+						<option value='bar_fade_random'></option>
+						<option value='v_slide_top'></option>
+						<option value='h_slide_right'></option>
+						<option value='v_slide_bottom'></option>
+						<option value='h_slide_left'></option>
+						<option value='stretch'></option>
+						<option value='squeez'></option>
+						<option value='fade'></option>
+				</field> 
+
+				<field 
+					name="auto_start"
+					type="radio" 
+					default="1" 
+					label="AUTO_START"
+					description="AUTO_START_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				
+			</fieldset>
+			
+				<fieldset name="advanced">
+				<field 
+					name="enable_cache" 
+					type="list" 
+					default="0" 
+					label="CACHE" 
+					description="CACHING_DESC">
+						<option value="1">Use global</option>
+						<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="30" label="CACHE_TIME" description="CACHE_TIME_DESC" />
+	
+				 
+		<field name="debug" type="radio" default="0" label="DEBUG" description="">
+		  <option value="0">JNO</option>
+		  <option value="1">JYES</option>
+		</field>
+
+
+			</fieldset>
+				<fieldset name="end_form" title="ENDFORM">
+					<field  type="lofspacer" name="end_form" title="end"/>
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

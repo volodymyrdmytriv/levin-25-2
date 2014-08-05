@@ -1,0 +1,35 @@
+/**
+ * @version 2.0.3 2013-04-08
+ * @package Joomla
+ * @subpackage Intellectual Property
+ * @copyright (C) 2013 the Thinkery
+ * @license GNU/GPL see LICENSE.php
+ */
+
+#property_map{width: 100%; height: 350px;}
+.gradient-button{padding: 3px 5px; background: #fff; border: solid 1px #ccc; cursor: pointer;}
+.pressed{background: #fff url(../images/transparent_gradient2.png) repeat-x;}
+#mainbody-surround{margin: 0;}
+#property_map{}
+
+#property_attributes{position: relative; margin: 20px 0;}
+#property_attributes div.property_attributes_wrap{border: 1px solid; border-color: #bbb #ccc #ddd; background: #f7f7f7;}
+#property_attributes div.property_attributes_inputs{display: none; padding-top: 4px; overflow: hidden;}
+#property_attributes select, #property_attributes label, #property_attributes input{display: block; float: left;}
+#property_attributes select{margin: 8px;}
+#property_attributes label{margin: 6px; padding: 4px 0;}
+#property_attributes input{margin: 1px 4px 0 0;}
+#property_attributes div.property_attributes_button{position: absolute; top: -9px; left: 50%; margin-left: -45px;}
+
+
+.bubble{overflow: hidden; width: 450px !important;}
+.bubble h4{margin: 0 0 2px; padding: 0; font-weight: bold;}
+.bubble_info{margin: 0 0 3px; font-size: 11px;}
+.bubble_image{position: relative; float: left; overflow: hidden; margin-right: 10px; border: solid 1px #666;}
+.bubble_desc{float: left !important; width: 220px !important; overflow: auto !important;}
+
+#advmap_nofound{background: #fff;}
+#advmap_nofound p{color: #666; margin-top: 5px; font-size: 12px;}
+
+/* 2.0.1 additions */
+#loading_div{position: absolute; height: 100% !important; width: 100% !important; z-index: 1; background: #000 url(../images/loading.gif) 50% 50% no-repeat; color: #fff; text-align: center; opacity: 0.5; filter: alpha(opacity=50);}

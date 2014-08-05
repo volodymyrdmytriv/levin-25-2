@@ -1,0 +1,322 @@
+2.0.3 Intellectual Property 
+========================================
+========================================
+
+* Bulk importer update and bug fixes
+* Added alias support to sh404sef plugin - defaults to title/street address if none available
+* Added alias to falang elements in order to translate alias per language
+* Shape tools in advanced search added to replace radius search functionality
+
+2.0.2 Intellectual Property 2013-03-20
+========================================
+========================================
+
+* New bulk import admin view for csv or xml imports
+* New plugin position before default property details form tabs
+* New module for recently sold listings
+* New option in form plugins to display before or after default form tabs
+* Bug fix - getListingInfo function 'created' date bug to work in all languages
+* Added option in menu params views to show disclaimer on all property listing pages
+* Modified slideshow module so it can be used multiple times on same page
+* Bug fix - can no longer select current category as parent in category edit form
+* Added IP cat menu module - displays menu of published IP categories
+* Added modified date to xmap plugin. Thanks to IP user ukfilm
+* Added translatable text parameters to IP mobile plugin for search criteria and website links
+* Added auto-populated username and email to request forms if user is logged in
+
+2.0.1 Intellectual Property 2012-05-04
+========================================
+========================================
+
+* New advanced search layout option - now choose overview or sortable table layout in advsearch menu params
+* Added default criteria options to advanced search menu item params
+* Rewritten query helper to be much more efficient
+* Language bug fix in form field elements
+* Added helper function to accommodate remote company/agent images
+* Added option for admin moderation - if enabled, listings need to be re-approved after front end edits
+* New IPMobile system plugin - detects mobile browser and makes adjustments to IP content for better mobile compatibility
+* New Twitter 'tweetlisting' plugin - 'tweets' to your Twitter account after adding or editing a listing
+* New Pinterest plugin - allows users to pin listings to Pinterest.com
+* New private message plugin - sends Joomla private message to agent when user submits request or send to friend forms
+* New featured companies module - like featured property module, only now it's a company!
+* New featured agents module - like featured companies module, only now it's an agent!
+* New random agent module - displays a random agent image/brief profile info in module position
+* New parameters for agent, company, and city in featured properties module
+* New recently viewed module - displays recently viewed listings per session
+* Updated date/time picker js for openhouse entries
+* Bug fix - added addfieldpath to allproperties view menu item to include basic param selectors
+* Replaced safehtml filter in forms with component helper filter to filter input based on user level
+* Added more security for remote images in property gallery uploader
+* Keyword search now searches exploded string - supports full address search (1234 Street Address)
+* Companies search filter bug fix - keyword not working in companies list view
+* CSS consistency in component quick search filters - added labels and li elements for stylesheet control
+* Added loading div overlay back to advanced search map css
+* Added default keyword and search text to mls search module
+* Added video field/tab to front end editing form - filtered according to user level
+* Removed fixed widths in advanced search view for fluid layouts
+* Bug fix - pagination in all properties view after using quick search or city links module
+* Bug fix - h2 property header now h1 tag
+* Css fix for slideshow module thumbnail display
+* Modules update - new option to select subcategories as well as parent (featured, popular, random, recent, and slideshow mods)
+* New advanced search menu param for nested categories - if yes, subcats are displayed as sub-items of main cat
+* New advanced search menu param for category columns. Provides cleaner display of category check boxes
+* New menu param to display a map of listings in category, all properties, agent properties, and company property views
+* Template overridable css - option to copy IP css file into multiple template css folder from CSS edit view
+* New setting for forcing accent colors even if an iproperty.css exists in the template folder
+* Added sale type parameter to property modules to only return listings within specified sale type
+* New JComments plugin - displays JComments form in lower property tabs position
+* Auto complete city, region, province and county fields - reduces repetition of these fields
+* Added language support for new image uploader
+* Bug fix for agent and company website 'view website' link
+
+2.0 Intellectual Property 2012-03-07
+========================================
+========================================
+
+* Front end management of listings, agents, and companies
+* Complete re-build of all admin views, models, and controllers using JForms
+* Flash, Silverlight, Gears, HTML5 compatible gallery uploader - upload multiple files at once
+* Drag and drop sortable images lists - drag from existing images, or re-arrange easily
+* Save search and previous search recall functionality
+* Optional email updates for saved searches and favorite listings (read documentation for cron script)
+* Radius search option in advanced search view
+* Menu parameters - now specify sale type, location, beds/baths, etc per menu item!
+* Advanced search menu parameters - override global advanced search params per menu item!
+* Improved ACL authorization - agent, super agent, and admin level all have different access
+* Categorized Amenities
+* Added admin filters for easier search ability
+* Category icons added to property list view
+* New optional social links for linkedin, facebook, and twitter
+* Improved routing
+* New views for front-end management - manage, property form, agent form, and company form
+* Separate controllers for task execution
+* Added alias fields to improve SEF url compatibility
+* New flexible field element for agent and company icon uploader
+* New field element for color picker with color recall of current accent and secondary colors
+* Added auto-installer for modules and plugins
+* Added update SQL directory 
+* Moved install/uninstall SQL to admin/sql
+* Rewrote installer to use new Joomla installer methods
+* Built in sh404sef support for sef urls (requires sh404 to be installed)
+* Optional approval levels for new listings
+* Front end email notifications letting admin know when new listings are added, etc
+* Way too much more to list!
+
+1.6.2 Intellectual Property 2011-10-07
+========================================
+========================================
+
+* First release 1.6.1 bug fixes and language file updates
+* New Open houses view (beta)
+* New slideshow gallery option
+* More efficient property queries
+* New modules and plugins
+* Maintenance upgrade
+
+1.6.1 Intellectual Property 2011-07-25
+========================================
+========================================
+
+* First release for Joomla 1.6 & 1.7
+
+1.5.6 Intellectual Property 2011-10-01
+========================================
+========================================
+
+* Required upgrade for IPortal, IPreserve, and IReport extensions
+* IE/Mootools upgrade plugin compatibility in admin views
+* New agent filter in admin properties view
+* Added company name to admin agent select list
+* Added thumbnail image to user favorites view rollover
+* Added security to admin controllers
+* Updated gmap scripts for added compatibility with national characters
+* Maintenance upgrade
+
+1.5.5 Intellectual Property 2011-04-01
+========================================
+========================================
+
+* Updated install procedure - install over existing version 1.5.4. No more backup needed.
+* Dynamic sale types - user can manage sale types, custom banners, colors, etc from admin settings
+* Mootools 1.1 and 1.2 compatibility front-end and admin
+* Admin ACL - Option to restrict edit access to user's company/agent listings in admin panel
+* Captcha plugin position vs integrated - now optional and easier updates with options
+* Re-structured gallery management - images and documents can be saved/edited with one click
+* Option for thumbnail preview in advsearch view
+* Ability to show reduced price with original price slashed out
+* Ability to hide address per listing - obscures lat and long map display, and hides address text
+* CSV import functionality
+* Option to require login to view details - can search without logging in, but can't access details
+* Extended menu item parameters per advsearch view (sale type, location, etc)
+* Video field - new tab if content exists in property details (plug ins and embedded code support)
+* Google v3 maps - no api key necessary
+* Maximum zoom setting to enable/disable view of exact listing locations
+* Advanced search js updated for mootools 1.1 and 1.2
+* If no records found in advanced search, map will center to default lat & long with message overlay
+* Added css classes to advsearch sortable table display in order to customize to template
+* Virtual Tour field for external vtour link if available
+* Toggle functionality added to 'Save' and 'Mortgage Calculator' toolbar buttons
+* Content plugin support in property descriptions and agent bio descriptions
+* FAQ tab in admin control panel - pulls from Thinkery IProperty FAQs RSS
+* More category column display options in home view and modules
+* New updated banner if enabled in admin settings - set days to show as updated
+* Added title field to Open Houses (optional)
+* GMap thumbnail now re-sizes and displays banners like overview thumbnails
+* Hotpads feed
+* New settings fields: updated days, maximum zoom, extended quicksearch and advanced search options
+* New property fields: video, terms, region, reception, tax, suite/apt, vtour, expected income, & hide
+* JPEG, zip and avi file support in gallery documents
+* Option to show url or tinyurl in pdf flyer
+* Document tab position next to images instead of between map and street view
+* Added option to search by county and region in component quick search filters
+* Added option to search by country, county, and region to advanced search
+* Last updated added to property overview and details views
+* Search child categories in advsearch, cat, companyproperties, and agentproperties views
+* RSS category link now links to property details instead of category
+* Additional plugin positions to extend functionality of component via plugins
+* PhocaPDF plugin support - requires install of IP phoca pdf plugin
+* Bug fixes and added feature requests
+* Much much more...
+
+1.5.4 Intellectual Property 2010-07-13
+========================================
+========================================
+
+* New Routing Helper
+* SEF urls in advanced search
+* SEF url in emails
+* Add space after price when currency type is shown after the price - 100EEK, 100 EEK
+* Template overridable image to replace Iproperty image for no results on front-end
+* Support transparent pngs in icon uploader for companies, agents, categories
+* Satellite view in admin edit form for more accurate drag and drop pin pointing
+* Additional category filter in properties admin
+* Backup is breaking with Greek language- believed to be fixed
+* Zillow/Trulia Feed
+* Google Base Feed
+* Google Base UK Feed
+* Google Earth KML Feed
+* Removed instances of inline styles
+* Rebuild admin control panel - tabbed view with stats, news, help, etc
+* Use Curl to display images in pdf
+* Added cURL support in PDF, Admin views (eliminates allow_url_fopen issue)
+* Add lightbox gallery for various image sizes
+* Add category title as rollover in admin admin property list view
+* Advanced search - if no short description, make sure it pulls part of the main description
+* Advanced search - only show preview link if property has lat and long
+* Number format on price sliders in advanced search
+* Add 'No Limit' option for price slider
+* Create session so user doesn't need to input form data multiple times for requests
+* Additional captcha for send to friend form
+* Pass property id in Send to friend and Request showing form to use in plugin after forms are submitted
+* Add cooling (as well as heating) in property details
+* Ability to hide/show listing price - 'Call for price' (editable in language files)
+* Fix noobslide gallery - first image does not display the title and description
+* Changed behavior of property default_overview to hide created date if it is not set
+* Fixed typo issue breaking noobslide
+* Open gallery when images tab is clicked
+* Fixed issue in PDF where disclaimer text would overwrite map
+* Add MSN to agent edit form and front-end display
+* Add Skype to agent edit form and front-end display
+* Add Gtalk to  agent edit form and front-end display
+* Field for agent license #
+* Field for company license #
+* Option to show street number before or after street address
+* Allow admin to set how many days a property is considered 'New'
+* Options to show/hide msn, skype, and gtalk for agent display
+* Options to show/hide agent & company license #
+* Options to show/hide agent & company images
+* Addition of Open Houses
+* Added Agent Notes field in ip admin
+* Option to use images/css/none for banner display
+* Fixed camera direction issue in Google StreetView plugin
+* Add name of requester to ‘Request Showing’ form email subject
+* Agents and company display Joom!fish compatible
+* Street address compatible with Joom!fish
+* Fixed pagination issue with sticky search criteria (with reset option)
+* Modified save property and mortgage calculator display - dropdown instead of modal window
+* Added Category list to property details page linking to related categories
+* Update all modules/plugins to use core component helper functions (consistency)
+* Fixed contact menu parameter to select agent/company id
+* Plugin position onAfterRenderToolbar() - trigger additional toolbar links in property view
+* All properties display [cat view with no category selected will now act as all properties]
+* Plugin for JomComment to support commenting on property listings
+* Property clone function to copy listings
+* Much more...
+
+1.5.3s Intellectual Property 2010-04-15
+========================================
+========================================
+
+* Security vulnerability fix in all models and helper files
+* Patch release - no changes other than security fixes
+
+1.5.3 Intellectual Property 2010-02-19
+========================================
+========================================
+
+* Add ‘Sold’ to the stype dropdown
+* DB indexing/Fixes
+* Allow Beds/Baths to get set to 0 for commercial props
+* Add toggle for metric/standard measurement
+* Add rollover preview to advanced search sortable table (toggle in admin to choose whether or not to display)
+* Add sale type in overview
+* Add agent photo/contact info to flyer view
+* Add streetview // plugin position [onAfterRenderMap($property, $settings, $pane, $height, $width, $accent)]
+* Add contact preference (email, phone) and preferred contact time (morning, afternoon, evening) to contact forms
+* Add agent bio field
+* Admin setting to send requests to admin, agent, company or agent and company
+* Admin setting to copy requests to site admin
+* Add unique constraint on mls_id in DB- or else you can have multiple props with same listing id-
+* Show sale type in property overview and details view
+* Add sort by price & listing date to quicksearch bar
+* fix property helper query and count query (left join categories)
+* change currency symbol in settings to allow 3 character (swiss IP user on forum)
+* allow 0 sqft, beds, baths, etc on advsearch
+* strip tags from description, if no short description is being used in overview
+* fix permission issue when creating folder on fresh install
+* Fix admin property keyword filter to search by ref# & short description
+* Ability to hide agent sidebar from property details page
+* Fix line break in property overview – if no country is selected, the line does not wrap how it should
+* Fix amenities line break issue – if no end paragraph tag for property details, amenities do not wrap below
+* Plugin positions – property details view
+* Plugin positions – admin control panel view [onAfterRenderStats($property, $settings, $pane)]
+* Toggle for metric/standard units
+* Ability to add default state, agent, company, category, and country in admin for new property form
+* Do not display property details if none exist (Lot size, Lot type, etc)
+* Extra field in property table for title (toggle in admin to show title instead of street address)
+* Add sold banner when a property is sold
+* Setting for default map type
+* Add field in DB for listing creator/owner. Need this for portal and pro, to track who can edit listing
+* Ability to hide sale type drop down in adv search view
+* After request plugin position [onAfterPropertyRequest($prop_id, $user_id, $post, $settings)]
+* Option to show full/fractional baths in admin/frontend
+* Split Amenities into 2 columns
+* Add amenities to flyer
+* Change captcha image to point to ‘index.php&tmpl=component’ instead of index2.php
+
+
+1.5.2 Intellectual Property 2009-12-03
+========================================
+========================================
+
+* Backup/Restore
+* Advanced search pagination
+* Email cloaking for agents and companies 
+* Price range search to quicksearch area 
+* Bug fixes -- ONGOING
+* Image path fixes 
+* Geocoding 
+* Gallery image title/description display 
+* Captcha image path fix 
+* Improved url routing depending on menu configuration 
+* Property delete images bug fix
+* Add missing postcode field
+
+1.5.1 Intellectual Property 2009-09-30
+========================================
+========================================
+
+* First release
+
+
+

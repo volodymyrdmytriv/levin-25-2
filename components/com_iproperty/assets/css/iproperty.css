@@ -1,0 +1,1764 @@
+/**
+ * @version 2.0.3 2013-04-08
+ * @package Joomla
+ * @subpackage Intellectual Property
+ * @copyright (C) 2013 the Thinkery
+ * @license GNU/GPL see LICENSE.php
+ */
+
+.clear {
+	clear: both;
+}
+div.ip_mainheader {
+	position: relative !important;
+}
+div.ip_mainheader h2, div.ip_mainheader h1 {
+	margin: 12px 0px;
+	margin-top: 0px;
+	font-size:22px!important;
+	width:500px!important;
+	line-height: normal;
+}
+.ip_header {
+	background: #4a79bc !important;
+	color: #fff;
+	padding: 5px 10px;
+}
+.ip_header_txt {
+	font-weight: bold !important;
+}
+.ip_cat_entry {
+	padding-left: 0px;
+	color: #333333;
+	vertical-align: top;
+}
+.ip_tabcontent {
+	padding: 10px;
+	text-align: left;
+	float: left;
+}
+.ip_favorites th {
+	color: #fff;
+}
+.rounded_bar {
+	background: #4a79bc;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: -10px;
+	padding: 5px 10px;
+}
+.ip_testimonial blockquote {
+	font-size: 11px;
+	padding: 10px;
+}
+.ip_testimonial_author {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.ip_testimonial_notes {
+	font-size: 10px;
+	color: #999;
+}
+table.ip_form_table td {
+	padding: 5px;
+}
+table.ip_cat_overview {
+	width: 100%;
+}
+table.ip_cat_overview td {
+	padding: 5px;
+	border: 0px;
+}
+td.ip_subcat_overview {
+	width: 10%;
+	padding: 0px;
+}
+td.ip_subcat_overview_title {
+	width: 10%;
+	padding: 0px;
+}
+td.ip_subcat_overview_desc {
+	width: 90%;
+	padding: 0px;
+}
+.main-page #sub-menu a:hover, .main-page #sub-menu li.active a {
+	color: #ffde00 !important;
+}
+#ip_disclaimer {
+	color: #999999;
+	font-size: 10px;
+}
+/* viewer styles */
+#viewer_control {
+	clear: both;
+	margin: 0pt;
+	padding: 0pt;
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+	width: auto;
+	height: 23px;
+}
+#viewer_control ul {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 23px !important;
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside;
+	background-color: transparent;
+	background: url(../viewer/corner.gif) bottom left no-repeat;
+	text-align: right;
+	float: right;
+	height: 23px;
+}
+#viewer_control li {
+	display: inline;
+	padding: 0px !important;
+	margin: 0pt;
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside;
+	background-color: #222222 !important;
+	float: left;
+	text-align: center;
+	height: 23px;
+}
+#viewer_control img {
+	margin: 5px 8px;
+}
+/* secondary styles */
+.mtop10 {
+	margin-top: 10px;
+}
+.mtop20 {
+	margin-top: 20px;
+}
+.mbottom10 {
+	margin-bottom: 10px;
+}
+.mbottom20 {
+	margin-bottom: 20px;
+}
+.p10 {
+	padding: 10px;
+}
+/* slider gallery styles */
+#box5 {
+	position: absolute;
+	width: 600px;
+}
+#box5 span {
+	display: block;
+	float: left;
+	width: 650px;
+}
+#info5 {
+	bottom: 0;
+}
+.gallery_info {
+	width: 650px;
+	height: 40px;
+	background: #000;
+	position: absolute;
+	padding: 10px;
+	color: #fff;
+}
+.mask2 {
+	position: relative;
+	width: 650px;
+	height: 400px;
+	overflow: hidden;
+	border: solid 1px #272727;
+	background: #000 url(../images/loading.gif) 50% 50% no-repeat;
+}
+#box5 span img {
+	display: block;
+	border: none;
+}
+div#box5_buttons {
+	height: 30px;
+	background: #3a3a3a !important;
+	display: block;
+	border: solid 1px;
+	border-width: 0 1px 1px 1px;
+}
+p.buttons {
+	cursor: pointer;
+	margin: 0px 10px !important;
+}
+p.buttons #prev5 {
+	background: url(../galleries/noobslide/slideshow_previous.gif) top left no-repeat;
+}
+p.buttons #play5 {
+	background: url(../galleries/noobslide/slideshow_play.gif) top left no-repeat;
+}
+p.buttons #stop5 {
+	background: url(../galleries/noobslide/slideshow_stop.gif) top left no-repeat;
+}
+p.buttons #next5 {
+	background: url(../galleries/noobslide/slideshow_next.gif) top left no-repeat;
+}
+.vtour_slideshow_container {
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+.vt_slideshow_btn {
+	height: 30px;
+	width: 30px;
+	display: block;
+	margin-right: 2px;
+	float: right;
+}
+.vt_slideshow_info {
+	padding: 5px 8px;
+}
+.vt_slideshow_h1 {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px !important;
+	padding: 0px !important;
+	text-transform: uppercase;
+}
+.vt_slideshow_h1desc {
+	margin-top: -15px;
+}
+/* home view */
+.ip_subcattitle {
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+div.ip_subcattitle {
+	margin-top: 10px;
+}
+a.ip_subcatlink {
+	color: #ff0000;
+	font-size: 10px;
+}
+.ip_subcatlink_count {
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+}
+/* common styles */
+.property_footer {
+	text-align: center;
+	font-size: 10px;
+	margin-top: 10px;
+	display: none;
+}
+.property_overview_title {
+	margin-bottom: 10px;
+}
+.property_overview_mlstitle {
+	margin-bottom: 10px;
+	position: relative;
+}
+.property_overview_price {
+	background: #666;
+	padding: 3px 5px;
+	border: solid #999;
+	border-width: 0px 1px 1px 1px;
+	font-weight: bold;
+	color: #ffde00!important;
+	font-size: 14px;
+	line-height: 16px;
+}
+.property_overview_secondary {
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 3px;
+}
+.property_overview_secondary .detail_text {
+	color: #ffde00!important;
+	font-weight: bold;
+}
+.property_overview_bannertopleft {
+	z-index: 1000 !important;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.property_overview_bannerbotleft {
+	z-index: 999 !important;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.property_overview_bannerright {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+}
+.property_header {
+	border-bottom: solid 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	padding: 3px 10px;
+	z-index: 0 !important;
+}
+.property_header_right {
+	position: absolute;
+	top: 0px;
+	right: 8px;
+	z-index: 1000 !important;
+}
+.property_header_results {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-transform: none;
+	padding: 3px 10px;
+}
+.property_link {
+	color: #006699 !important;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.property_options {
+	color: #666600 !important;
+	text-decoration: none !important;
+	text-transform: lowercase;
+}
+.property_amenity {
+	background: url(../images/check.gif) 0% 50% no-repeat;
+	padding-left: 20px !important;
+	float: left;
+	padding: 2px 5px;
+	line-height: 19px;
+}
+.no_results {
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	padding: 3px 10px;
+	border-color: #999999;
+}
+.adv_table {
+	width: 100%;
+	margin: 0px 5px 0px 5px;
+	border-collapse: collapse;
+}
+.quicksearch_holder {
+	background: url(../images/block_fade.gif) top left repeat-x;
+	margin-bottom: 10px;
+	padding-top: 8px;
+	padding-left: 8px;
+}
+.ip_quicksearch_sortholder {
+	text-align: right;
+	float: right;
+	margin-right: 0px;
+}
+.ip_quicksearch_optholder {
+	padding-bottom: 5px;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 5px;
+}
+.ip_quicksearch_optholder li {
+	display: inline;
+	padding: 3px 5px;
+	list-style-type: none;
+	line-height: 25px;
+}
+.ip_quicksearch_optholder li label {
+	font-weight: bold;
+}
+.ip_qssearch {
+	width: 150px;
+}
+.ip_qsprice {
+	width: 80px;
+}
+.ptable {
+	margin-top: 10px;
+	width: 100% !important;
+	border-collapse: collapse;
+	float: left;
+	font-size: 90%;
+}
+.ptable td {
+	padding: 5px;
+	vertical-align: top;
+}
+.ptable th {
+	padding: 3px 5px;
+	font-size: 11px;
+	color: #fff;
+	text-align: left;
+	border-left: solid 1px #fff;
+}
+.ptable th.ip_center {
+	text-align: center !important;
+}
+.ip_dsummary_table {
+	margin-bottom: 10px;
+}
+.ip_dsummary {
+	padding: 0 8px 0 0 !important;
+}
+.pfooter {
+	font-size: 9px;
+	color: #444;
+}
+.header_accent, .header_accent a {
+	font-weight: bold !important;
+	color: #fff !important;
+	text-decoration: none !important;
+}
+.accent1, .accent1 a {
+	color: #006699 !important;
+}
+.accent2, .accent2 a {
+	color: #6699CC !important;
+}
+.summary_table {
+	width: 100% !important;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.summary_table td {
+	padding: 0px;
+}
+.summary_left {
+	padding-right: 8px !important;
+}
+.summary_sidecol {
+	border-left: solid 1px #ccc;
+	padding-left: 8px !important;
+}
+.summary_sidecol a, .summary_sidecol a:hover {
+	text-decoration: none;
+}
+/* search area */
+input {
+	display: inline!important;
+}
+.inputbox {
+	font-size: 12px;
+	background: #fff;
+	border: solid 1px #999;
+}
+.notification-block {
+	background-color : #fff4c2;
+	padding : 5px;
+	border : 1px solid #ffcc33;
+	width : 100%;
+}
+.contactbox {
+	width: 400px;
+}
+.numbox {
+	width: 50px;
+}
+.ip_pagination {
+	width: 100%;
+}
+.ip_pagecount {
+	width: 50%;
+	text-align: left;
+}
+.ip_pagenav {
+	width: 50%;
+	text-align: right;
+}
+.ipbutton {
+	border: solid 1px #ccc;
+	background: #f7f7f7;
+	margin-left: 3px;
+}
+/* property details */
+.firstlayer {
+	background: #f7f7f7;
+}
+.property_thumb_holder, .cat_thumb_holder {
+	background: #a2a2a2;
+	position: relative;
+	border: solid 1px #2e394c;
+	overflow: hidden;
+}
+.property_thumb_holder {
+	background: transparent;
+	position: relative;
+	border: solid 0px #000000;
+	overflow: hidden;
+}
+.ip_quickopt {
+	background: #f7f7f7;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+}
+.ip_beds, .ip_baths, .ip_sqft, .ip_lotsize, .ip_lot_acres, .ip_yearbuilt, .ip_heat, .ip_garage_type, .ip_roof {
+	text-align: right !important;
+	position: relative;
+	padding: 5px 40px 5px 10px;
+	background-color: #e7f2f6;
+	border-top: solid 1px #d2e4ea;
+	border-bottom: solid 1px #d2e4ea;
+	margin-bottom: 3px;
+	background-repeat: no-repeat;
+	background-position: 96% 50%;
+}
+.ip_beds span.ip_title, .ip_baths span.ip_title, .ip_sqft span.ip_title, .ip_lotsize span.ip_title, .ip_lot_acres span.ip_title, .ip_yearbuilt span.ip_title, .ip_heat span.ip_title, .ip_garage_type span.ip_title, .ip_roof span.ip_title {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	font-weight: bold;
+}
+.ip_beds {
+	background-image: url(../images/icon-bed.gif);
+}
+.ip_baths {
+	background-image: url(../images/icon-bath.gif);
+}
+.ip_sqft {
+	background-image: url(../images/icon-sqft.gif);
+}
+.ip_heat {
+	background-image: url(../images/icon-heat.gif);
+}
+.ip_lotsize {
+	background-image: url(../images/icon-lotsize.gif);
+}
+.ip_lot_acres {
+	background-image: url(../images/icon-lotsize.gif);
+}
+.ip_yearbuilt {
+	background-image: url(../images/icon-yearbuilt.gif);
+}
+.ip_garage_type {
+	background-image: url(../images/icon-yearbuilt.gif);
+}
+.ip_roof {
+	background-image: url(../images/icon-yearbuilt.gif);
+}
+.ip_sidecol {
+	border-left: solid 1px #ccc;
+	padding-top: 0px !important;
+}
+.ip_sidecol_item {
+	border-bottom: solid 1px #ccc;
+	padding: 5px 10px 5px 20px;
+	background: url(../images/block.png) 5px 50% no-repeat;
+}
+.ip_sidecol a {
+	display: block;
+	text-decoration: none;
+}
+.ip_sidecol_item:hover {
+	background: url(../images/block_down.png) 10px 50% no-repeat;
+	padding-left: 25px;
+}
+.ip_sidecol_header {
+	background: #2e394c;
+	padding: 3px 10px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.ip_sidecol_address {
+	background: #f7f7f7;
+	border: solid 1px #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+/* span styles */
+.subheader {
+	border-bottom: solid 1px #ccc;
+	padding: 5px 10px;
+}
+.container {
+	border: solid 1px #666666;
+}
+.form_title {
+	font-weight: bold;
+	padding: 5px;
+}
+.form_input {
+	padding: 5px;
+}
+div.alert {
+	background: #ffd5d5;
+	border-top: solid 3px #cf3738;
+	border-bottom: solid 3px #cf3738;
+	padding: 10px;
+	color: #cf3738;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+div.info {
+	background: #c3d2e5;
+	border-top: solid 3px #84a7db;
+	border-bottom: solid 3px #84a7db;
+	padding: 10px;
+	color: #0055bb;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+/* toolbar styles */
+img.ip_toolbar_divider {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+#ip_toolbar {
+	height: 30px;
+	/*padding: 0px 10px;*/
+	padding: 0px;
+	text-align: right;
+	line-height: 30px;
+	margin: 0px;
+	background: transparent!important;
+}
+#ip_toolbar a {
+	display: inline;
+	border-left: solid 0px #fff;
+	color: #fff !important;
+	padding: 4px 10px;
+	margin-left:5px;
+	text-decoration: none;
+	
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+background: #1F3F52;
+background: -moz-linear-gradient(90deg, #3F80A7 0%, #1F3F52 100%);
+background: -webkit-linear-gradient(90deg, #3F80A7 0%, #1F3F52 100%);
+background: -o-linear-gradient(90deg, #3F80A7 0%, #1F3F52 100%);
+background: -ms-linear-gradient(90deg, #3F80A7 0%, #1F3F52 100%);
+background: linear-gradient(180deg, #3F80A7 0%, #1F3F52 100%);
+
+
+
+}
+#ip_toolbar a:hover {
+	color: #ffffff !important;
+	background: #1F3F52;
+background: -moz-linear-gradient(90deg, #1F3F52 0%, #3F80A7 100%);
+background: -webkit-linear-gradient(90deg, #1F3F52 0%, #3F80A7 100%);
+background: -o-linear-gradient(90deg, #1F3F52 0%, #3F80A7 100%);
+background: -ms-linear-gradient(90deg, #1F3F52 0%, #3F80A7 100%);
+background: linear-gradient(180deg, #1F3F52 0%, #3F80A7 100%);
+	
+}
+/* tooltip styles */
+span.hasTip {
+	cursor: pointer;
+}
+.tool-tip {
+	float: left;
+	background: #ffffcc !important;
+	border: 1px solid #d7d7ac !important;
+	padding: 5px;
+	max-width: 200px;
+	color: #000;
+}
+.tool-title {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: -14px;
+	padding-top: 14px;
+	padding-bottom: 5px;
+	background: url(../images/selector-arrow.png) no-repeat;
+}
+.tool-text {
+	font-size: 100%;
+	margin: 0;
+}
+/* pane-sliders  */
+.pane-sliders .title {
+	margin: 0;
+	padding: 2px;
+	color: #666;
+	cursor: pointer;
+}
+.pane-sliders .panel {
+	border: 1px solid #666;
+	border-width: 1px 0px;
+}
+.pane-sliders .panel h3 {
+	background: #2e394c;
+	color: #fff;
+	font-size: 16px;
+}
+.pane-sliders .content {
+	background: #fff;
+}
+.pane-sliders .adminlist {
+	border: 0 none;
+}
+.pane-sliders .adminlist td {
+	border: 0 none;
+}
+.jpane-toggler span {
+	background: transparent url(../images/j_arrow.png) 5px 50% no-repeat;
+	padding-left: 20px;
+}
+.jpane-toggler-down span {
+	background: transparent url(../images/j_arrow_down.png) 5px 50% no-repeat;
+	padding-left: 20px;
+}
+.jpane-toggler-down {
+	border-bottom: 1px solid #ccc;
+}
+/* tabs */
+dl.tabs {
+	float: left;
+	margin: 0px 0 -1px 0 !important;
+	z-index: 50;
+}
+dl.tabs a {
+	text-decoration: none !important;
+}
+dl.tabs h3 {
+	font-size: 11px !important;
+	line-height: 14px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+dl.tabs dt {
+	float: left;
+	padding: 4px 6px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	margin-left: 0px;
+	margin-right: 2px;
+	background: #666;
+	color: #fff;
+	font-size: 11px;
+	text-decoration: none !important;
+}
+dl.tabs dt.open {
+	background: #F9F9F9;
+	border-bottom: 1px solid #F9F9F9;
+	z-index: 100;
+	color: #fff;
+}
+div.current {
+	clear: both;
+	border: none;
+	padding: 10px;
+	max-width: none !important;
+}
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+div.ip_spacer {
+	display: block;
+	height: 15px;
+}
+/* agent and company details display */
+.ip_phone, .ip_cell, .ip_fax, .ip_website, .ip_email {
+	float: left;
+	width: 400px;
+	padding-left: 20px;
+}
+.ip_phone {
+	background: url(../images/icon-phone.gif) 0% 50% no-repeat;
+}
+.ip_cell {
+	background: url(../images/icon-cell.gif) 0% 50% no-repeat;
+}
+.ip_fax {
+	background: url(../images/icon-fax.gif) 0% 50% no-repeat;
+}
+.ip_website {
+	background: url(../images/icon-web.gif) 0% 50% no-repeat;
+}
+.ip_email {
+	background: url(../images/icon-email.gif) 0% 50% no-repeat;
+}
+.ip_desc {
+	margin-top: 15px;
+	border-top: solid 2px;
+	padding-top: 10px;
+}
+.ip_sidecol_email {
+	background: url(../images/icon-email.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+.ip_sidecol_phone {
+	background: url(../images/icon-phone.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+/* agent display */
+.ip_agent_photo {
+	float: left;
+	padding: 3px;
+	border: solid 1px #ccc;
+	margin-right: 10px;
+}
+.ip_agent_details {
+	float: left;
+	width: 250px;
+}
+.ip_agent_address {
+	float: right;
+	width: 200px;
+}
+.ip_agent_options {
+	float: right;
+	width: 100px;
+}
+.ip_agent_detailsheader {
+	border-bottom: solid 1px #282828;
+}
+.side_agent_photo {
+	margin: 10px 0px;
+}
+.side_agent_photo img {
+	padding: 2px;
+	border: solid 1px #ccc;
+}
+/* company display */
+.ip_company_photo {
+	float: left;
+	padding: 3px;
+	border: solid 1px #ccc;
+	margin-right: 100px;
+}
+.ip_company_details {
+	float: left;
+	width: 200px;
+}
+.ip_company_address {
+	float: left;
+	width: 250px;
+}
+.ip_company_options {
+	float: right;
+	width: 100px;
+}
+.ip_company_detailsheader {
+	border-bottom: solid 1px #282828;
+}
+.side_company_photo {
+	margin: 10px 0px;
+}
+.side_company_photo img {
+	padding: 2px;
+	border: solid 1px #ccc;
+}
+.pe_price {
+	font-size: 16px;
+	color: #ff0000;
+	font-weight: bold;
+	line-height: 30px;
+}
+.prop_overview_price {
+	background: #fff;
+	padding: 3px 5px;
+	border: solid #ccc;
+	border-width: 0px 1px 1px 1px;
+	font-weight: bold;
+	color: #006699 !important;
+	font-size: 14px;
+	line-height: 16px;
+}
+li.ip_checklist {
+	list-style-type: none;
+	background: url(../images/tick.png) 0 50% no-repeat;
+	line-height: 20px;
+	padding-left: 20px !important;
+}
+#ip_gallery_link {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	font-size: 12px;
+	background: url(../images/gallery.gif) 0 50% no-repeat;
+	line-height: 20px;
+	padding-left: 25px;
+}
+.ip_smallfont {
+	font-size: 10px;
+	font-style: italic;
+	color: #999999;
+}
+.key {
+	font-weight: bold;
+	text-align: right;
+}
+.ip_details_table {
+	width: 100%;
+}
+.ip_details_table td {
+	padding: 3px;
+}
+/*// NEW AS OF V.1.5.3 //*/
+.ip_sidecol_subaddress {
+}
+.ip_sidecol_subaddress span {
+	font-weight: bold;
+}
+.ip_mapright {
+	vertical-align: top;
+	padding-top: 30px !important;
+}
+.ip_agentbio {
+	border: solid 1px #ccc;
+	background: #f7f7f7;
+	padding: 10px;
+	margin: 10px 0px;
+}
+.ip_sidecol_cell {
+	background: url(../images/icon-cell.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+/*// NEW AS OF V.1.5.4 //*/
+.iprelative {
+	position: relative;
+}
+.ip_agentsearch_form {
+	margin: 0px;
+}
+.ip_companysearch_form {
+	margin: 0px;
+}
+.ip_quicksearch_form {
+	margin: 0px;
+}
+.ip_saveprop_form {
+	margin: 0px;
+}
+.ip_agentdetails {
+	margin-bottom: 10px;
+}
+.ip_company_photo {
+	margin-bottom: 10px;
+}
+.ip_company_details {
+	margin-bottom: 10px;
+}
+.ip_cform_wrapper {
+	margin-top: 10px;
+	width: 500px;
+	float: right;
+}
+.ip_rform_wrapper {
+	margin-top: 10px;
+}
+.ip_sfform_wrapper {
+	margin-top: 10px;
+}
+.ip_loginform_wrapper {
+	padding: 10px;
+}
+.ip_loginform_container {
+	width: 300px;
+	text-align: left;
+	padding: 10px;
+}
+.ip_imagetab {
+	position: relative;
+	background: #b9b9b9;
+	overflow: hidden;
+}
+.ip_doctab {
+	overflow: auto;
+}
+.ip_noresult_wrapper {
+	height: 500px;
+	padding: 10px;
+	margin: 10px 0px;
+	text-align: center !important;
+}
+.ip_nologin_wrapper {
+	height: 100px;
+	padding: 10px;
+	margin: 10px 0px;
+	text-align: center !important;
+}
+.ip_savemessage {
+	margin-top: 30px;
+}
+.ip_container {
+	border: solid 1px #ccc;
+}
+.ip_noborder {
+	border: none !important;
+}
+.ip_smallspan {
+	font-size: 9px;
+}
+.ip_msn, .ip_skype, .ip_gtalk {
+	float: left;
+	width: 400px;
+	padding-left: 20px;
+}
+.ip_msn {
+	background: url(../images/icon-msn.gif) 0% 50% no-repeat;
+}
+.ip_skype {
+	background: url(../images/icon-skype.gif) 0% 50% no-repeat;
+}
+.ip_gtalk {
+	background: url(../images/icon-gtalk.gif) 0% 50% no-repeat;
+}
+.ip_sidecol_msn {
+	background: url(../images/icon-msn.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+.ip_sidecol_skype {
+	background: url(../images/icon-skype.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+.ip_sidecol_gtalk {
+	background: url(../images/icon-gtalk.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+.ip_sidecol_license {
+	background: url(../images/icon-license.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+.ipclear {
+	clear: both;
+}
+.ip_sidecol_mainaddress {
+	margin-bottom: 10px;
+}
+.ip_sidecol_mainaddress span {
+	font-weight: bold;
+}
+.ip_sidecol_categories {
+	margin: 10px 0px;
+}
+.ip_sidecol_categories span {
+	font-weight: bold;
+}
+/*// css banners //*/
+.property_overview_bannercsstop {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 0px 5px;
+}
+.property_overview_bannercssbot {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding: 0px 5px;
+}
+.bannernew {
+	background: #20a800;
+	font-weight: bold;
+	color: #fff;
+}
+.bannersold {
+	background: #cc0000;
+	font-weight: bold;
+	color: #fff;
+}
+.bannerpending {
+	background: #e8ab07;
+	font-weight: bold;
+	color: #fff;
+}
+/*// NEW AS OF V.1.5.5 //*/
+.vtour_sidebar {
+	background: transparent url(../images/vtour.png) no-repeat 5px 50%;
+	border: solid 1px #ccc;
+	padding: 5px 5px 5px 30px;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+.vtour_link {
+	font-weight: bold;
+	color: #981b1f;
+}
+.ip_adv_maincat {
+	font-weight: bold;
+	padding: 3px 0px;
+	border-bottom: solid 1px #ccc;
+}
+.ip_adv_subcat {
+	font-size: 11px;
+	padding: 3px 0px;
+}
+.bannerupdated {
+	background: #076db3;
+	font-weight: bold;
+	color: #fff;
+}
+.ipterms {
+	padding: 10px;
+	background: #f7f7f7;
+	font-size: 10px;
+	color: #666666;
+}
+.side_oh_header {
+	padding: 3px;
+	background: #ccc;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.hotspot {
+	color: #900;
+	padding-bottom: 1px;
+	border-bottom: 1px dotted #900;
+	cursor: pointer
+}
+#tt {
+	position: absolute;
+	display: block;
+	background: url(../images/tt_left.gif) top left no-repeat;
+	z-index: 1001 !important;
+}
+#tttop {
+	display: block;
+	height: 5px;
+	margin-left: 5px;
+	background: url(../images/tt_top.gif) top right no-repeat;
+	overflow: hidden
+}
+#ttcont {
+	display: block;
+	padding: 7px 12px 3px 7px;
+	margin-left: 5px;
+	background: #f7f7f7;
+	color: #666;
+	text-align: center;
+}
+#ttbot {
+	display: block;
+	height: 5px;
+	margin-left: 5px;
+	background: url(../images/tt_bottom.gif) top right no-repeat;
+	overflow: hidden
+}
+#save-panel, #calculate-panel {
+	display: none;
+}
+.ip_plgtoolbar_links {
+	padding: 5px;
+	background: #f7f7f7;
+	margin-bottom: 2px;
+}
+.ip_plgtoolbar_links li {
+	display: inline;
+}
+table, tr, td {
+	border: 0px;
+}
+a img {
+	border: none;
+}
+.ip_oh_date {
+	white-space: nowrap;
+}
+.ip_oh_divider {
+	font-size: 9px;
+	font-style: italic;
+}
+.ip-slider-div {
+	padding: 10px;
+	border: dotted 1px #ccc !important;
+	border-top: none !important;
+}
+.ip-fields {
+	margin: 10px 0;
+}
+.ip-fields label {
+	float: left;
+	width: 9em;
+}
+.inputbox, .ip-fields {
+	background: #fff url(../images/content_bg.gif) repeat-x;
+	border: solid 1px #ccc;
+	padding: 3px
+}
+.ip_centered {
+	text-align: center;
+}
+.openhouse_header {
+	margin-top: 10px;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 3px;
+	text-align: right;
+	font-weight: bold;
+}
+/*// NEW AS OF V.2.0 //*/
+div.ip_warning, tr.ip_warning {
+	padding: 10px;
+	color: #c00;
+	background: #EFE7B8 !important;
+	border-top: 3px solid #F0DC7E !important;
+	border-bottom: 3px solid #F0DC7E !important;
+	margin-bottom: 10px;
+}
+div.ip_message, tr.ip_message {
+	padding: 10px;
+	color: #0055BB;
+	background: #C3D2E5;
+	border-top: 3px solid #84A7DB;
+	border-bottom: 3px solid #84A7DB;
+	margin-bottom: 10px;
+}
+ul.ip_quicksearch_filters {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.ip_overview_catcontainer img {
+	vertical-align: middle;
+}
+.tip-wrap {
+	background: #f7f7f7;
+	border: solid 1px #ccc;
+	max-width: 250px;
+}
+input.invalid, select.invalid {
+	background: #ffe3e4 !important;
+	border: solid 1px #ff0000 !important;
+}
+#ipClearSearch {
+	background: url(../images/map/cleartab.png) 50% 0% no-repeat;
+	height: 26px;
+	padding: 0px;
+	margin: 0px;
+	border-top: solid 1px #ccc;
+	line-height: 26px;
+	text-align: center;
+}
+.ip_amenities {
+	margin-top: 10px;
+}
+/* Standards for commonly used elements */
+div.width-20 {
+	width: 20%;
+}
+div.width-30 {
+	width: 30%;
+}
+div.width-35 {
+	width: 35%;
+}
+div.width-40 {
+	width: 40%;
+}
+div.width-45 {
+	width: 45%;
+}
+div.width-50 {
+	width: 50%;
+}
+div.width-55 {
+	width: 55%;
+}
+div.width-60 {
+	width: 60%;
+}
+div.width-65 {
+	width: 65%;
+}
+div.width-70 {
+	width: 70%;
+}
+div.width-80 {
+	width: 80%;
+}
+div.width-100 {
+	width: 100%;
+}
+.clrlft {
+	clear: left;
+}
+.clrrt {
+	clear: right;
+}
+.fltlft {
+	float: left;
+}
+.fltrt {
+	float: right;
+}
+.fltnone {
+	float: none;
+}
+div.width-20 fieldset, div.width-30 fieldset, div.width-35 fieldset, div.width-40 fieldset, div.width-45 fieldset, div.width-50 fieldset, div.width-55 fieldset, div.width-60 fieldset, div.width-65 fieldset, div.width-70 fieldset, div.width-80 fieldset, div.width-100 fieldset {
+	padding: 5px 17px 17px 17px;
+}
+.center {
+	text-align: center;
+}
+/* Gallery styles */
+.ip_attention {
+	background: #ddf1fb;
+	border: solid 1px #377391;
+	padding: 10px;
+	font-weight: bold;
+}
+.ipgallerycontainer ul li {
+	list-style-type: none;
+}
+#uploadRemoteGo {
+	height: 16px;
+	width: 16px;
+	background: url(../images/icon-16-upload.png) top left;
+	cursor: pointer;
+}
+#ip_gallery_available, #ip_gallery_selected {
+	height: 500px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#ip_gallery_available li, #ip_gallery_selected li {
+	cursor: move;
+	padding: 0px;
+}
+#ipImgForm label {
+	min-width: 50px !important;
+	float: left !important;
+}
+#ipImgForm input {
+	min-width: 100px !important;
+	float: right !important;
+	margin-bottom: 2px;
+}
+.available_header {
+	padding: 7px;
+	font-weight: bold;
+	background: #377391;
+	color: #fff;
+	margin-right: 2px;
+}
+.current_header {
+	padding: 7px;
+	font-weight: bold;
+	background: #66CC66;
+	color: #fff;
+}
+.remote_container {
+	padding: 10px;
+	background: #f7f7f7;
+	border-top: solid 1px #ccc;
+}
+.iplist-image {
+	border: solid 1px #377391;
+	width: 80px;
+}
+.ipdoc-image {
+	width: 32px;
+}
+ul.ipsorter {
+	width: 100% !important;
+	padding: 0px !important;
+}
+ul.ipsorter li {
+	border-bottom: solid 1px #ccc;
+}
+ul.ipsorter .imgtable {
+	width: 100%;
+	background: #fff;
+}
+ul.ipsorter .imgtable:hover {
+	width: 100%;
+	background: #ebf7ff;
+}
+ul.ipsorter .imgtable td {
+	vertical-align: top;
+	padding: 3px;
+}
+ul.ipsorter li.noresults {
+	padding: 10px;
+	border: solid 1px #ccc;
+}
+.remote_container {
+	text-align: right;
+}
+.uploadRemotebtn {
+	float: right;
+	clear: right;
+}
+.ipDelete, .ipSave, .ipUpimg, .ipDownimg {
+	line-height: 16px;
+	padding-left: 20px;
+	margin-right: 3px;
+	margin-top: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.ipDelete {
+	background: url(../images/icon-16-delete.png) no-repeat top left;
+}
+.ipSave {
+	background: url(../images/icon-16-save.png) no-repeat top left;
+}
+.ipUpimg {
+	height: 15px;
+	width: 15px;
+	background: url(../images/icon-16-upload.png) no-repeat top left;
+}
+.ipDownimg {
+	background: url(../images/icon-16-download.png) no-repeat top left;
+}
+.iplistaction {
+	text-align: right;
+	border-bottom: dotted 1px #ddd;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+.ip-pdsearchfilters {
+	padding: 5px 0px;
+	border-bottom: dotted 1px #ccc;
+	margin-bottom: 5px;
+	font-size: 10px;
+	color: #377391;
+}
+.avail_sidebar {
+	background: transparent url(../images/calendar.png) no-repeat 5px 50%;
+	border: solid 1px #ccc;
+	padding: 5px 5px 5px 30px;
+	margin-bottom: 10px;
+}
+#ip_gallery_sel_pagination, #ip_gallery_av_pagination {
+	clear: both;
+	padding: 5px 0px;
+	border-bottom: dotted 1px #ccc;
+	text-align: center;
+	line-height: 30px;
+}
+#ip_gallery_sel_pagination span, #ip_gallery_av_pagination span {
+	display: inline;
+	width: 120px;
+}
+#ip_gallery_sel_pagination a, #ip_gallery_av_pagination a {
+	cursor: pointer;
+	background: #f7f7f7;
+	border: solid 1px #ccc;
+	line-height: 20px;
+}
+#ipNextButton_sel, #ipNextButton_av, #ipPrevButton_sel, #ipPrevButton_av {
+	padding: 3px;
+	font-weight: bold;
+}
+#ipNextButton_sel, #ipNextButton_av {
+	float: right;
+	margin-right: 5px;
+}
+#ipPrevButton_sel, #ipPrevButton_av {
+	float: left;
+	margin-left: 0px;
+}
+/* New as of 2.0.1 */
+.ip_quicksearch_filters li, .ip_quicksearch_filters label {
+	list-style-type: none !important;
+	background-image: none !important;
+}
+dl.tabs dt {
+	border-width: 1px 1px 0px 1px;
+}
+dl.tabs dt.open {
+	border-bottom: 0px !important;
+}
+fieldset.ip_plg_favoritetools {
+	border: solid 1px;
+}
+.ip_quicksearch_sortholder {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.ip_quicksearch_sortholder li {
+	display: inline;
+	padding: 3px 5px;
+	list-style-type: none;
+	line-height: 25px;
+}
+.ip_quicksearch_sortholder li label {
+	font-weight: bold;
+}
+.iprow0 {
+	border: 0px !important;
+}
+.ip_loginform_container {
+	border: solid 1px;
+}
+.ipoffline div {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.ipblink {
+	text-decoration: blink;
+}
+.ip_hidden {
+	display: none !important;
+}
+.ip_manage_agent_img {
+	width: 100px;
+	border: solid 1px #377391 !important;
+}
+.ip_noaccess, .ip_noaccess div {
+	padding: 10px;
+}
+.caticon {
+	margin-right: 2px;
+}
+.ip_slashprice {
+	text-decoration: line-through !important;
+}
+.property_overview_bannercssbot {
+	font-weight: bold;
+	color: #fff;
+}
+.ipmod_noresult {
+	padding: 10px;
+	text-align: center;
+}
+/* accent and secondary accent colors - if this css is copied to your current template css folder you can 
+* override these colors per template; otherwise IP will override the colors with the IP settings accent and 
+* secondary accent colors -- by default #999 is the accent, #f7f7f7 is the secondary accent
+*/
+.property_header, .ip_loginform_container, .ip_container, dl.tabs dt, dl.tabs dt.open, fieldset.ip_plg_favoritetools, .ip_mapright div {
+	border-color: #999;
+}
+.ip_favorites th, #ip_toolbar, dl.tabs dt, .ptable.bordered-table.zebra-striped th, .ip_sidecol_header, .ptable th {
+	background-color: #000!important;
+}
+.property_footer a, dl.tabs dt.open a {
+	color: inherit;
+}
+div.current {
+	border-top-color: #999;
+}
+.iprow0, .ip_doctab, .ip_mapright div, .ip_sidecol_address, .ip_education tr, dl.tabs dt.open {
+	background-color: #f7f7f7;
+}
+dl.tabs dt a, .ptable.bordered-table.zebra-striped th, .ip_favorites th {
+	color: inherit;
+}
+/* New as of 2.0.2 */
+.ip_linkedin, .ip_twitter, .ip_facebook, .ip_social1 {
+	float: left;
+	width: 400px;
+	padding-left: 20px;
+}
+.ip_sidecol_linkedin, .ip_linkedin, .ip_sidecol_twitter, .ip_twitter, .ip_sidecol_facebook, .ip_facebook, .ip_sidecol_social1, .ip_social1 {
+	background: url(../images/icon-web.gif) 0% 50% no-repeat;
+	padding-left: 20px;
+}
+/* custom styles */
+
+.propertysearch .searchmap {
+	float: left;
+	width: 720px;
+}
+.propertysearch .searchform {
+	float: left;
+	width: 230px;
+	padding-left: 35px;
+}
+.propertysearch .searchform select {
+	width: 100%;
+}
+#search-space-available-text {
+	font-size: 12px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: 0px !important;
+}
+.iproperty_table_address {
+	font-size: 90%;
+}
+[disabled] {
+	color: #BCBCBC;
+}
+#property_map {
+	width: 100%;
+	height: 350px;
+}
+img {
+	max-width: none;
+}
+#property-stats-wrapper {
+	width: 100%;
+	height: 55px;
+}
+#property-stats-wrapper .label {
+	font-size: 130%;
+	font-weight: normal;
+	background: none;
+	color: inherit;
+	padding: 0px;
+}
+#property-stats-wrapper .value {
+	font-size: 23px;
+	color: #24446f;
+	line-height: 35px;
+}
+.property-tab-details-content {
+	background-image: url(../images/property-separator.png);
+	background-repeat: repeat-y;
+	background-position: 415px 0px;
+}
+.ptable .property-details-title {
+	color: #24446f;
+	font-size: 16px;
+	font-weight: bold;
+}
+tr.demographics-header {
+	background-color: #e4e6e8;
+}
+tr.demographics-header td {
+	line-height: 25px;
+	text-align: right;
+	color: #444444;
+	font-size: 12px;
+	font-weight: bold;
+	padding-right: 10px;
+}
+td.demographics-title {
+	background-image: url(../images/demographics-icon.png);
+	background-repeat: no-repeat;
+	background-position: 3px 8px;
+}
+td.dem-label {
+	background-color: #eeeff0;
+	border-top: solid 2px #ffffff;
+	line-height: 22px;
+	padding-left: 10px;
+	color: #555555;
+	font-size: 13px;
+	font-weight: bold;
+}
+td.dem-col-1 {
+	text-align: right;
+	padding-right: 10px;
+	color: #555555;
+	font-size: 14px;
+	line-height: 22px;
+	border-top: solid 2px #ffffff;
+	border-left: solid 2px #ffffff;
+	background-color: #e4edf9;
+}
+td.dem-col-2 {
+	text-align: right;
+	padding-right: 10px;
+	color: #555555;
+	font-size: 14px;
+	line-height: 22px;
+	border-top: solid 2px #ffffff;
+	border-left: solid 2px #ffffff;
+	background-color: #d9e6f6;
+}
+td.dem-col-3 {
+	text-align: right;
+	padding-right: 10px;
+	color: #555555;
+	font-size: 14px;
+	line-height: 22px;
+	border-top: solid 2px #ffffff;
+	border-left: solid 2px #ffffff;
+	background-color: #c9dbf1;
+}
+.iproperty_details_address,
+.iproperty_details_agents {
+	font-size: 115%;
+}
+.space-available a {
+	display: block;
+	height: 25px;
+}
+.space-available a, .space-available a:active, .space-available a:visited, .space-available a:link {
+	color: #999999;
+	font-size: 14px;
+	font-weight: bold;
+}
+a.disabled-space-link, a.disabled-space-link:active, a.disabled-space-link:visited, a.disabled-space-link:link, a.disabled-space-link:hover {
+	color: #999999 !important;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: default;
+}
+.space-available a span.bullet {
+	float: left;
+	display: block;
+	background-image: url(../images/space-available-bullet.png);
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #ffffff;
+	font-size: 10px;
+	text-align: center;
+	margin-right: 6px;
+}
+.space-available a span.lp-space-title {
+	float: left;
+	display: block;
+	width: 115px;
+}
+.current-tenants .tenant-item {
+	height: 25px;
+}
+.current-tenants span.tenant-number {
+	float: left;
+	display: block;
+	background-image: url(../images/current-tenants-bullet.png);
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #ffffff;
+	font-size: 10px;
+	text-align: center;
+	margin-right: 6px;
+}
+.current-tenants span.tenant-name {
+	float: left;
+	display: block;
+	width: 115px;
+}
+a.share-button-mail, a.share-button-mail:active, a.share-button-mail:visited, a.share-button-mail:link {
+	display: block;
+	width: 28px;
+	height: 28px;
+	margin-left: 10px;
+	background-image: url(../images/share-buttons.png);
+	background-position: -28px 0px;
+}
+a.property-tab-button, a.property-tab-button:active, a.property-tab-button:visited, a.property-tab-button:link {
+	float: right;
+	display: block;
+	height: 25px;
+	line-height: 27px;
+	color: #555555;
+	text-decoration: none;
+	padding: 0px 11px 0px 7px;
+	margin-left: 3px;
+	margin-bottom: 10px;
+	border: solid 1px #d8d8d8;
+	background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 3px #cccccc;
+}
+a.property-tab-button > span {
+	margin-top: 3px;
+}
+span.pdf-icon {
+	float: left;
+	display: block;
+	width: 23px;
+	height: 21px;
+	margin-right: 6px;
+	background-image: url(../images/pdf-icon.png);
+}
+a.property-details-directions-button, a.property-details-directions-button:active, a.property-details-directions-button:visited, a.property-details-directions-button:link {
+	float: left;
+	color: #888888;
+	padding-top: 2px;
+	line-height: 20px;
+	padding-left: 22px;
+	background-image: url(../images/directions-pin.png);
+	background-repeat: no-repeat;
+	margin-top: 13px;
+}

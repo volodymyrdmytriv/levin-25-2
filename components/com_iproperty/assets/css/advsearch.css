@@ -1,0 +1,99 @@
+/**
+ * @version 2.0.3 2013-04-08
+ * @package Joomla
+ * @subpackage Intellectual Property
+ * @copyright (C) 2013 the Thinkery
+ * @license GNU/GPL see LICENSE.php
+ */
+
+#property_map{width: 100%; height: 350px;}
+.gradient-button{padding: 3px 5px; background: #fff; border: solid 1px #ccc; cursor: pointer;}
+.pressed{background: #fff url(../images/transparent_gradient2.png) repeat-x;}
+#mainbody-surround{margin: 0;}
+#property_map{}
+
+#property_counter{
+    padding: 5px;
+	position: absolute;
+	bottom: 22px;
+	right: 8px;
+	border: 2px solid #fff;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	z-index: 1;
+    background: #fff url(../images/transparent_gradient2.png) top left repeat-x;
+}
+
+#property_sliders{overflow: hidden;}
+div.property_slider{float: left; width: 47%; padding: 12px 10px;}
+.slider_labels{position: relative; margin-bottom: 3px; text-align: center; overflow: hidden;}
+.slider_label_min{position: absolute; top: 0; left: 0;}
+.slider_label_max{position: absolute; top: 0; right: 0;}
+div.slider_element{height: 6px; border: 1px solid #666;}
+div.slider_knob_start, .slider_knob_end{width: 15px; height: 15px; background: transparent url(../images/map/slider_handle.png) no-repeat center center; margin-top: -5px;}
+div.slider_band{}
+
+#property_attributes{position: relative; margin: 20px 0;}
+#property_attributes div.property_attributes_wrap{border: 1px solid; border-color: #bbb #ccc #ddd; background: #f7f7f7;}
+#property_attributes div.property_attributes_inputs{display: none; padding-top: 4px; overflow: hidden;}
+#property_attributes select, #property_attributes label, #property_attributes input{display: block; float: left;}
+#property_attributes select{margin: 8px;}
+#property_attributes label{margin: 6px; padding: 4px 0;}
+#property_attributes input{margin: 1px 4px 0 0;}
+#property_attributes div.property_attributes_button{position: absolute; top: -9px; left: 50%; margin-left: -45px;}
+
+#prop_table{width: 100%; border: 1px solid #bbb !important; border-top: 1px solid #ccc !important;}
+#prop_table thead tr{background: #eee url(../images/transparent_gradient2.png) top left repeat-x;}
+#prop_table thead tr th{
+    padding: 4px 4px 4px 16px;
+    background-color: transparent;
+    background-position: 4px 8px;
+    border-bottom: 1px solid #bbb;
+    border-left: 1px solid #ccc;
+    text-align: left;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+}
+table#prop_table th {background: #eee url(../images/icon-table-sort.png) no-repeat 2px 8px; padding: 4px 4px 4px 14px;}
+#prop_table thead tr th.table-th-sort{background-image: url(../images/icon-table-sort-asc.png);}
+#prop_table thead tr th.table-th-sort-rev{background-image: url(../images/icon-table-sort-desc.png) !important;}
+#prop_table thead tr th div{display: inline;}
+#prop_table thead tr th:first-child{border-left: none;}
+#prop_table th span.street_preview{color: #777; font-size: 11px; padding-left: 9px;}
+#prop_table tr{background: #f1f1f1;}
+#prop_table td{padding: 4px; border-top: 1px solid #e3e3e3;}
+#prop_table tr:first-child td{border-top: none;}
+
+ul.property_pager{height: 17px; margin: 7px 0; padding: 0; list-style: none;}
+ul.property_pager li{display: inline;}
+li.page_range{float: left;}
+li.page_buttons{float: right;}
+div.page_button{float: left; margin-left: 4px;}
+div.previous_page{padding-left: 6px;}
+div.next_page{padding-right: 6px;}
+.table-tr-odd{background: #fff !important;}
+
+.bubble{overflow: hidden; width: 450px !important;}
+.bubble h4{margin: 0 0 2px; padding: 0; font-weight: bold;}
+.bubble_info{margin: 0 0 3px; font-size: 11px;}
+.bubble_image{position: relative; float: left; overflow: hidden; margin-right: 10px; border: solid 1px #666;}
+.bubble_desc{float: left !important; width: 220px !important; overflow: auto !important;}
+
+#advmap_nofound{background: #fff;}
+#advmap_nofound p{color: #666; margin-top: 5px; font-size: 12px;}
+
+#property_fieldset_stype{clear: both; margin: 15px 3px 3px 3px;}
+#property_fieldset_location{clear: both; border-top: solid 1px #ccc; margin: 3px;}
+#property_fieldset_ptypes{clear: both; border-top: solid 1px #ccc; margin: 3px 5px;}
+
+/* 2.0.1 additions */
+#loading_div{position: absolute; height: 100% !important; width: 100% !important; z-index: 1; background: #000 url(../images/loading.gif) 50% 50% no-repeat; color: #fff; text-align: center; opacity: 0.5; filter: alpha(opacity=50);}
+.ipcatwrap{float: left; padding: 0px;}
+.col4{width: 25%;}
+.col3{width: 33%;}
+.col2{width: 49%;}
+.col1{width: 100%;}
+label.ipmaincat{font-weight: bold; line-height: 15px;}
+label.ipcat{font-weight: normal; line-height: 15px;}
+label.ipsubcat{margin-left: 25px !important; margin-top: -5px !important; line-height: 15px; clear: both;}
